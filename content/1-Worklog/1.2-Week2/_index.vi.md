@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 2"
-date: 2024-01-01
+date: 2026-04-27
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
@@ -12,48 +12,35 @@ pre: " <b> 1.2. </b> "
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
+* Hiểu cách hoạt động của VPC Peering trong Amazon Web Services.
+* Biết cách kết nối hai VPC để các tài nguyên có thể giao tiếp nội bộ với nhau.
+* Hiểu và cấu hình các thành phần mạng cơ bản.
+* Thực hành tạo và cấu hình EC2 Instance để kiểm tra kết nối mạng giữa các VPC.
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Đọc và hiểu cách kết nối hai VPC khác nhau <br>&emsp; + Tạo 2 VPC khác nhau tập <br>&emsp; + Tạo mạng con <br>&emsp; + Tạo cổng internet <br>&emsp; + Tạo bảng định tuyến                                                                                            | 27/04/2026   | 27/04/2026      |
+| 3   | - Tạo Security Group <br> - Tìm hiểu inbound rules và outbound rules <br> - Bảo mật EC2 bằng Security Group                                           | 28/04/2026   | 28/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Tạo máy chủ EC2 <br> - Thiết lập địa chỉ IP tĩnh <br> - Tạo cổng NAT <br> - Kiểm tra ping amazon.com | 29/04/2026   | 29/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Cập nhật Network ACL: (NACLs) <br>&emsp; + Sửa inbound rule <br>&emsp; + Lưu lại phần chỉnh sửa                  | 30/04/2026   | 30/04/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Tạo Peering Connection - Cấu hình bảng - Kích hoạt CROSS-PEER DNS                                                                                       | 1/05/2026   | 1/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu được cách thiết lập và kết nối giữa hai VPC khác nhau trong Amazon Web Services.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thực hiện thành công:
+  * Tạo VPC
+  * Tạo Subnet
+  * Tạo Internet Gateway
+  * Cấu hình Route Table
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Tạo và cấu hình Security Group của EC2 Instance.
+* Triển khai thành công EC2 Instance và cấu hình địa chỉ IP tĩnh cho máy chủ.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+* Thiết lập NAT Gateway để EC2 trong private subnet truy cập Internet.
+* Kiểm tra kết nối mạng thành công ping đến amazon.com.
+* Kích hoạt Cross-Peer DNS giúp các EC2 Instance có thể phân giải tên miền nội bộ giữa các VPC.
+* Hiểu được quy trình triển khai, cấu hình, bảo mật và quản lý hệ thống mạng cơ bản trên AWS.
 
