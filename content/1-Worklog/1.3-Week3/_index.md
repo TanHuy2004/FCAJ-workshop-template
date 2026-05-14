@@ -1,57 +1,43 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
+date: 2026-05-04
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it directly** into your report, including this warning.
 {{% /notice %}}
-
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand and implement a Hybrid Cloud networking model on AWS.
+* Configure Amazon Web Services Transit Gateway to connect multiple VPCs.
+* Set up Hybrid DNS using Amazon Web Services Route 53 Resolver for domain name resolution between AWS and on-premises environments.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks implemented during this week:
 
+| Day | Tasks | Start Date | Completion Date | References |
+| --- | --- | --- | --- | --- |
+| 2 | - Learn the concepts and functions of Transit Gateway. <br> - Create VPCs for network connection. | 04/05/2026 | 04/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 3 | - Create Transit Gateway. <br> - Configure ASN and DNS support. <br> - Create Transit Gateway Attachments to connect VPCs. <br> - Create Transit Gateway Route Tables. | 05/05/2026 | 05/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 4 | - Configure route tables for each subnet. <br> - Add routes from VPCs to Transit Gateway. <br> - Test connectivity between VPCs using ping. | 06/05/2026 | 06/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 5 | - Initialize infrastructure using CloudFormation Templates. <br> - Configure Security Groups for DNS, RDP, and SSH. <br> - Create Route 53 Outbound Endpoint and Resolver Rules. | 07/05/2026 | 07/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 6 | - Create Route 53 Inbound Endpoints. <br> - Verify routing and DNS operations. <br> - Clean up resources to avoid unnecessary costs: <br>&emsp; + Delete Resolver Rules <br>&emsp; + Delete Endpoints <br>&emsp; + Delete Transit Gateway Attachments <br>&emsp; + Delete Transit Gateway and Route Tables. | 08/05/2026 | 08/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
 
-### Week 3 Achievements:
+### Week 3 Results:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Successfully deployed Amazon Web Services Transit Gateway to connect multiple VPCs within the network system.
 
-* Successfully created and configured an AWS Free Tier account.
+* Configured routing between VPCs through Transit Gateway and successfully tested connectivity using ping.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Initialized infrastructure using CloudFormation Templates for the Hybrid DNS model.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully configured Hybrid DNS using Amazon Web Services Route 53 Resolver.
 
-* Used AWS CLI to perform basic operations such as:
+* Created and configured:
+  * Route 53 Outbound Endpoint
+  * Route 53 Inbound Endpoint
+  * Resolver Rules
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Cleaned up resources after completing the lab to avoid unnecessary charges.

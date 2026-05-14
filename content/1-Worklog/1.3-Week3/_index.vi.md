@@ -1,6 +1,6 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
+date: 2026-05-04
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
@@ -12,48 +12,36 @@ pre: " <b> 1.3. </b> "
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hiểu và triển khai mô hình kết nối mạng Hybrid Cloud trên AWS.
+* Thiết lập Amazon Web Services Transit Gateway để kết nối nhiều VPC.
+* Cấu hình Hybrid DNS bằng Amazon Web Services Route 53 Resolver nhằm phân giải tên miền giữa AWS và môi trường nội bộ.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm hiểu khái niệm và chức năng của Transit Gateway. <br> - Tạo các VPC                                                                                             | 04/05/2026   | 04/05/2026      |<https://cloudjourney.awsstudygroup.com/>  <br> <https://www.youtube.com/@AWSStudyGroup/videos>  |
+| 3   | - Tạo Transit Gateway <br> - Cấu hình ASN, DNS support <br>- Tạo Transit Gateway Attachments để kết nối các VPC. <br>- Tạo Transit Gateway Route Tables.                                          | 05/05/2026   | 05/05/2026      | <https://cloudjourney.awsstudygroup.com/>  <br> <https://www.youtube.com/@AWSStudyGroup/videos>  |
+| 4   | - Cấu hình route table cho từng subnet. <br> - Thêm route từ các VPC đến Transit Gateway. <br> - Kiểm tra khả năng kết nối giữa các VPC bằng ping  | 06/05/2026   | 06/05/2026      | <https://cloudjourney.awsstudygroup.com/>   <br> <https://www.youtube.com/@AWSStudyGroup/videos>|
+| 5   | - Khởi tạo hạ tầng bằng CloudFormation Templates. <br> - Cấu hình Security Group cho DNS, RDP và SSH. <br> - Tạo Route 53 Outbound Endpoint và Resolver Rules.                  | 07/05/2026   | 07/05/2026      | <https://cloudjourney.awsstudygroup.com/>  <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 6   | - Tạo Route 53 Inbound Endpoints. <br> - Kiểm tra hoạt động của routing và DNS.e <br> - Dọn dẹp tài nguyên để tránh phát sinh chi phí: <br>&emsp; + Xóa Resolver Rules <br>&emsp; + Xóa Endpoints <br>&emsp; + Xóa Transit Gateway Attachments <br>&emsp; + Xóa Transit Gateway và Route Tables.                                                                                  | 08/05/2026   | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/>  <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
 
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Triển khai thành công Amazon Web Services Transit Gateway để kết nối nhiều VPC trong cùng hệ thống mạng.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thiết lập routing giữa các VPC thông qua Transit Gateway và kiểm tra kết nối thành công bằng ping.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Khởi tạo hạ tầng bằng CloudFormation Templates phục vụ mô hình Hybrid DNS.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Thiết lập thành công Hybrid DNS bằng Amazon Web Services Route 53 Resolver.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Tạo và cấu hình:
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+  * Route 53 Outbound Endpoint
+  * Route 53 Inbound Endpoint
+  * Resolver Rules
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Dọn dẹp tài nguyên sau khi hoàn thành bài lab để tránh phát sinh chi phí.
 
 
