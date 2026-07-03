@@ -1,57 +1,38 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
+date: 2026-06-07
 weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
+{{% /notice %}}
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn about Data Lake architecture and data analytics services on AWS.
+* Practice building data storage, processing, governance, and visualization solutions on AWS.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be completed this week:
 
+| Day | Tasks | Start Date | Completion Date | Reference Materials |
+| --- | --- | --- | --- | --- |
+| 2 | - Learn about Data Lake architecture on AWS.<br>- Learn how to use Amazon S3 for centralized data storage and organize data using folders and partitions. | 01/06/2026 | 01/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 3 | - Build a simple Data Lake using sample datasets.<br>- Practice data ingestion, storage, and data management for analytics. | 02/06/2026 | 02/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 4 | - Learn AWS data analytics services.<br>- Study Batch Processing and Streaming Processing for large-scale data analytics. | 03/06/2026 | 03/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 5 | - Learn ETL/ELT workflows.<br>- Practice data transformation and data cleansing before analysis.<br>- Learn the fundamentals of Data Governance. | 04/06/2026 | 04/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 6 | - Practice using Amazon QuickSight.<br>- Connect data sources and build charts, dashboards, and reports for data visualization. | 05/06/2026 | 05/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understood the Data Lake architecture on AWS and learned how to organize data in Amazon S3 for efficient storage and querying.
 
-* Successfully created and configured an AWS Free Tier account.
+* Built a simple Data Lake using sample datasets and performed data ingestion, storage, and management tasks.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Learned Batch Processing and Streaming Processing concepts and gained an understanding of large-scale data analytics on AWS.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Practiced ETL/ELT workflows, data transformation, and data cleansing, while learning the fundamentals of Data Governance, including access control, data security, and data quality.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Used Amazon QuickSight to create charts, dashboards, and reports for effective data visualization and analysis.
