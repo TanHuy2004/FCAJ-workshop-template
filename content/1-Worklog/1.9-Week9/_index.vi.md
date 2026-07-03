@@ -1,59 +1,38 @@
 ---
 title: "Worklog Tuần 9"
-date: 2024-01-01
+date: 2026-06-21
 weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
+
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
+### Mục tiêu tuần:
 
-### Mục tiêu tuần 9:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu kiến trúc, quy trình phát triển và các thành phần chính của hệ thống TrustBite Review System.
+* Thiết lập môi trường phát triển và làm quen với công nghệ, cơ sở dữ liệu và các dịch vụ AWS được sử dụng trong dự án.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu tổng quan dự án TrustBite Review System.<br>- Nghiên cứu mục tiêu phát triển, các chức năng chính và cấu trúc monorepo của hệ thống.<br>- Làm quen với backend (Node.js, Express), web (Next.js, React) và mobile (Flutter). | 15/06/2026 | 15/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 3 | - Cài đặt môi trường phát triển.<br>- Cấu hình các công cụ cần thiết và chạy thử hệ thống trên môi trường cục bộ.<br>- Tìm hiểu cách các thành phần giao tiếp thông qua REST API. | 16/06/2026 | 16/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 4 | - Tìm hiểu các dịch vụ AWS được sử dụng trong dự án.<br>- **Nghiên cứu:** <br>&emsp; + Amazon S3 <br>&emsp; + Amazon Cognito <br>&emsp; + Amazon Textract <br>&emsp; + Amazon Bedrock <br>&emsp; + Amazon SES <br>&emsp; + LocalStack | 17/06/2026 | 17/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 5 | - Nghiên cứu quy trình Anti-Fraud Verification.<br>- Tìm hiểu xử lý hóa đơn, OCR và kiểm tra tính hợp lệ của dữ liệu.<br>- Tìm hiểu thiết kế cơ sở dữ liệu PostgreSQL, schema và mối quan hệ giữa các bảng. | 18/06/2026 | 18/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 6 | - Tìm hiểu cơ chế xác thực và phân quyền bằng Amazon Cognito và JWT.<br>- Làm quen với coding convention, Pull Request và quy trình kiểm thử của dự án. | 19/06/2026 | 19/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
 
-### Kết quả đạt được tuần 9:
+### Kết quả đạt được:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu tổng quan về TrustBite Review System, kiến trúc monorepo và chức năng của các thành phần backend, web và mobile.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thiết lập thành công môi trường phát triển và chạy hệ thống trên môi trường cục bộ.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Nắm được vai trò của các dịch vụ AWS như Amazon S3, Amazon Cognito, Amazon Textract, Amazon Bedrock, Amazon SES và LocalStack trong hệ thống.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hiểu quy trình Anti-Fraud Verification, bao gồm xử lý hóa đơn, OCR và kiểm tra tính hợp lệ của dữ liệu.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm được thiết kế cơ sở dữ liệu PostgreSQL, cơ chế xác thực bằng Amazon Cognito và JWT, đồng thời làm quen với coding convention, Pull Request và quy trình kiểm thử của dự án.
