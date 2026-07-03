@@ -1,59 +1,38 @@
 ---
 title: "Worklog Tuần 10"
-date: 2024-01-01
-weight: 2
+date: 2026-06-28
+weight: 1
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
+
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
+### Mục tiêu tuần:
 
-### Mục tiêu tuần 10:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thiết lập môi trường phát triển và xây dựng nền tảng backend cho dự án.
+* Tìm hiểu kiến trúc hệ thống, cơ sở dữ liệu và quy trình phát triển phần mềm của dự án.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Thiết lập môi trường phát triển.<br>- Cài đặt Docker Compose để khởi chạy PostgreSQL, Redis, LocalStack và pgAdmin.<br>- Kiểm tra kết nối cơ sở dữ liệu. | 22/06/2026 | 22/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 3 | - Thiết kế cơ sở dữ liệu PostgreSQL.<br>- Tạo các bảng dữ liệu chính.<br>- Kích hoạt các extension cần thiết và thiết lập cơ chế migration để quản lý cơ sở dữ liệu. | 23/06/2026 | 23/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 4 | - Xây dựng bộ khung backend theo kiến trúc phân tầng với Express và ESModules.<br>- Tổ chức mã nguồn theo từng module và áp dụng quy ước đặt tên thống nhất.<br>- Tìm hiểu và triển khai Repository Harness, hoàn thành story **TB-HARNESS**. | 24/06/2026 | 24/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 5 | - Nghiên cứu kiến trúc dự án.<br>- Xây dựng cơ chế soft delete cho bảng nhà hàng.<br>- Bổ sung các trường phục vụ quản lý dữ liệu.<br>- Tìm hiểu mô hình phân quyền của hệ thống. | 25/06/2026 | 25/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 6 | - Nghiên cứu thiết kế các bảng vai trò, phân quyền và quản lý trạng thái tài khoản.<br>- Tìm hiểu quy trình làm việc, coding convention và cấu trúc story packet.<br>- Thực hành phân tích story mẫu để chuẩn bị triển khai các tính năng tiếp theo. | 26/06/2026 | 26/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
 
-### Kết quả đạt được tuần 10:
+### Kết quả đạt được:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thiết lập thành công môi trường phát triển với Docker Compose và triển khai các dịch vụ PostgreSQL, Redis, LocalStack và pgAdmin.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thiết kế cơ sở dữ liệu PostgreSQL ban đầu, tạo các bảng chính, cấu hình extension và cơ chế migration để quản lý thay đổi cơ sở dữ liệu.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Xây dựng bộ khung backend theo kiến trúc phân tầng với Express và ESModules, đồng thời triển khai Repository Harness và hoàn thành story **TB-HARNESS**.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hiểu kiến trúc dự án, triển khai cơ chế soft delete cho bảng nhà hàng và nghiên cứu mô hình phân quyền của hệ thống.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Làm quen với coding convention, quy trình phát triển phần mềm và phương pháp phân tích story packet để chuẩn bị cho việc phát triển các tính năng tiếp theo.
