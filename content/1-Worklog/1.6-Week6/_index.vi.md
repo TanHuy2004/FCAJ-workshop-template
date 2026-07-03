@@ -1,58 +1,40 @@
 ---
-title: "Worklog Tuần 6"
-date: 2024-01-01
+title: "Worklog Tuần"
+date: 2026-05-31
 weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
+
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
+### Mục tiêu tuần:
 
-### Mục tiêu tuần 6:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu quy trình đóng gói, triển khai và quản lý ứng dụng container trên AWS.
+* Thực hành triển khai Microservices, xây dựng CI/CD và giám sát môi trường container.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Tìm hiểu Docker và quy trình đóng gói ứng dụng.<br>- **Thực hành:** <br>&emsp; + Xây dựng Docker Image <br>&emsp; + Quản lý Docker Image phục vụ triển khai trên AWS | 25/05/2026 | 25/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 3 | - Triển khai ứng dụng container trên Amazon Lightsail Containers và Amazon EKS.<br>- Cấu hình môi trường vận hành, tài nguyên hệ thống và kiểm tra hoạt động của ứng dụng. | 26/05/2026 | 26/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 4 | - Chuyển đổi ứng dụng từ Monolithic sang Microservices.<br>- **Thực hành:** <br>&emsp; + Sử dụng Docker và AWS Fargate <br>&emsp; + Triển khai các dịch vụ độc lập <br>&emsp; + Đánh giá khả năng mở rộng của hệ thống | 27/05/2026 | 27/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 5 | - Xây dựng quy trình CI/CD với AWS CodePipeline và GitHub.<br>- Tự động hóa quá trình build, kiểm thử và triển khai ứng dụng container. | 28/05/2026 | 28/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 6 | - Cấu hình giám sát và quản lý tài nguyên container.<br>- Áp dụng các biện pháp bảo mật nhằm đảm bảo tính ổn định và an toàn của hệ thống. | 29/05/2026 | 29/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả đạt được:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thành thạo đóng gói ứng dụng bằng Docker, xây dựng và quản lý Docker Image phục vụ triển khai trên AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Triển khai thành công ứng dụng container trên:
+  * Amazon Lightsail Containers
+  * Amazon EKS
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Chuyển đổi ứng dụng từ kiến trúc Monolithic sang Microservices bằng Docker và AWS Fargate, đồng thời đánh giá khả năng mở rộng của hệ thống.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Xây dựng quy trình CI/CD với AWS CodePipeline và GitHub để tự động hóa quá trình build, kiểm thử và triển khai ứng dụng.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Biết cách giám sát, quản lý tài nguyên và áp dụng các biện pháp bảo mật cho môi trường container nhằm đảm bảo tính ổn định và an toàn của hệ thống.

@@ -1,57 +1,40 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
+date: 2026-05-31
 weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
+{{% /notice %}}
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn containerization, deployment, and management of applications on AWS.
+* Practice implementing Microservices, building CI/CD pipelines, and monitoring containerized environments.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be completed this week:
 
+| Day | Tasks | Start Date | Completion Date | Reference Materials |
+| --- | --- | --- | --- | --- |
+| 2 | - Learn Docker fundamentals and application containerization.<br>- **Practice:** <br>&emsp; + Build Docker Images <br>&emsp; + Manage Docker Images for AWS deployment | 25/05/2026 | 25/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 3 | - Deploy containerized applications on Amazon Lightsail Containers and Amazon EKS.<br>- Configure the runtime environment, system resources, and verify application functionality. | 26/05/2026 | 26/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 4 | - Migrate a Monolithic application to a Microservices architecture.<br>- **Practice:** <br>&emsp; + Use Docker and AWS Fargate <br>&emsp; + Deploy independent services <br>&emsp; + Evaluate system scalability | 27/05/2026 | 27/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 5 | - Build a CI/CD pipeline using AWS CodePipeline and GitHub.<br>- Automate the build, testing, and deployment processes for containerized applications. | 28/05/2026 | 28/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 6 | - Configure monitoring and resource management for containerized environments.<br>- Apply security best practices to ensure system stability and security. | 29/05/2026 | 29/05/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Gained hands-on experience in containerizing applications with Docker and managing Docker Images for deployment on AWS.
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully deployed containerized applications on:
+  * Amazon Lightsail Containers
+  * Amazon EKS
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Migrated a Monolithic application to a Microservices architecture using Docker and AWS Fargate, and evaluated the scalability of the system.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Built a CI/CD pipeline with AWS CodePipeline and GitHub to automate the build, testing, and deployment of containerized applications.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Learned how to monitor containerized environments, manage resources, and apply security best practices to ensure system stability and reliability.
