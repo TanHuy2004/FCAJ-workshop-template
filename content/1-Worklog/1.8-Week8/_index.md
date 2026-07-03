@@ -1,57 +1,38 @@
 ---
 title: "Week 8 Worklog"
-date: 2024-01-01
+date: 2026-06-14
 weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
+{{% /notice %}}
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn AWS AI/ML services and their applications to real-world problems.
+* Practice building, deploying, and managing AI/ML solutions on AWS.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be completed this week:
 
+| Day | Tasks | Start Date | Completion Date | Reference Materials |
+| --- | --- | --- | --- | --- |
+| 2 | - Learn AWS AI/ML services.<br>- Study Foundation Models and Generative AI.<br>- **Practice:** <br>&emsp; + Use Large Language Models (LLMs) to build content generation and automation applications. | 08/06/2026 | 08/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 3 | - Learn Computer Vision concepts.<br>- **Practice:** <br>&emsp; + Object detection <br>&emsp; + Image and video analysis | 09/06/2026 | 09/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 4 | - Study Natural Language Processing (NLP) techniques.<br>- Practice text analysis and natural language processing. | 10/06/2026 | 10/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 5 | - Learn the Machine Learning lifecycle, including model building, training, and deployment.<br>- Study MLOps concepts for managing, monitoring, and deploying AI/ML models. | 11/06/2026 | 11/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
+| 6 | - Learn Responsible AI principles.<br>- Study transparent, secure, and responsible AI development practices. | 12/06/2026 | 12/06/2026 | <https://cloudjourney.awsstudygroup.com/> <br> <https://www.youtube.com/@AWSStudyGroup/videos> |
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Learned AWS AI/ML services and gained an understanding of how Foundation Models, Generative AI, and Large Language Models (LLMs) can be applied to real-world applications.
 
-* Successfully created and configured an AWS Free Tier account.
+* Practiced Computer Vision techniques for object detection and image/video analysis.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Learned Natural Language Processing (NLP) techniques and performed text analysis and natural language processing tasks.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Understood the Machine Learning lifecycle, including model development, training, deployment, and MLOps practices for managing AI/ML models.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Learned the principles of Responsible AI and understood the importance of developing transparent, secure, and responsible AI systems.
