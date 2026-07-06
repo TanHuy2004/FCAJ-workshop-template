@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:tanhuy2004.github.io)",
+      "PowerShell(gh repo view TanHuy2004/FCAJ-workshop-template --json nameWithOwner,defaultBranchRef,url)",
+      "PowerShell(gh api repos/TanHuy2004/FCAJ-workshop-template/pages)",
+      "PowerShell(git ls-remote --heads origin gh-pages main)",
+      "PowerShell(git ls-tree --name-only origin/gh-pages)",
+      "PowerShell(git ls-tree --name-only origin/gh-pages index.html en/index.html 404.html)",
+      "PowerShell(git ls-tree --name-only HEAD themes/hugo-theme-learn)",
+      "PowerShell(hugo --minify)"
+    ]
+  }
+}
