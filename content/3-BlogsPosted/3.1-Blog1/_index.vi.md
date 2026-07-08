@@ -76,13 +76,13 @@ Nếu token không hợp lệ hoặc đã hết hạn, request sẽ bị từ ch
 * Cần người dùng hoặc ứng dụng client tự quản lý Access Token.
 * Cấu hình ban đầu có thể phức tạp hơn ALB.
 
-## Mô hình 3: CloudFront kết hợp Lambda@Edge
+## Mô hình 3: CloudFront kết hợp AWS Lambda
 
 Đây là mô hình có mức bảo mật cao hơn và thường được sử dụng khi ứng dụng phục vụ người dùng ở nhiều khu vực.
 
-![Mô hình 3: CloudFront kết hợp Lambda@Edge](/FCAJ-workshop-template/images/3-BlogsPosted/blog1/model-3-cloudfront-lambda-edge.png)
+![Mô hình 3: CloudFront kết hợp AWS Lambda](/FCAJ-workshop-template/images/3-BlogsPosted/blog1/model-3-cloudfront-lambda-edge.png)
 
-CloudFront sẽ nhận request đầu tiên từ người dùng. Trước khi request được chuyển đến backend, Lambda@Edge sẽ được kích hoạt để kiểm tra Access Token.
+CloudFront sẽ nhận request đầu tiên từ người dùng. Trước khi request được chuyển đến backend, AWS Lambda sẽ được kích hoạt để kiểm tra Access Token.
 
 Nếu token hợp lệ, CloudFront tiếp tục chuyển request đến Application Load Balancer. Ngoài ra, CloudFront còn có thể thêm một custom header để ALB biết rằng request thực sự đi qua CloudFront, từ đó hạn chế việc truy cập trực tiếp vào backend.
 
@@ -95,7 +95,7 @@ Nếu token hợp lệ, CloudFront tiếp tục chuyển request đến Applicat
 ### Hạn chế
 
 * Triển khai phức tạp hơn.
-* Lambda@Edge phải được triển khai tại khu vực us-east-1.
+* AWS Lambda phải được triển khai tại khu vực us-east-1.
 * Chi phí và việc quản lý cũng cao hơn hai mô hình còn lại.
 
 ## So sánh ba mô hình
@@ -104,13 +104,13 @@ Nếu ứng dụng chỉ là một website thông thường, Application Load Ba
 
 Đối với các hệ thống cung cấp API cho web hoặc ứng dụng di động, API Gateway sẽ phù hợp hơn nhờ khả năng xác thực JWT trực tiếp và tích hợp tốt với kiến trúc microservices.
 
-Trong khi đó, CloudFront kết hợp Lambda@Edge phù hợp với các hệ thống lớn cần vừa tối ưu hiệu năng, vừa tăng cường bảo mật và phục vụ người dùng trên phạm vi toàn cầu.
+Trong khi đó, CloudFront kết hợp AWS Lambda phù hợp với các hệ thống lớn cần vừa tối ưu hiệu năng, vừa tăng cường bảo mật và phục vụ người dùng trên phạm vi toàn cầu.
 
 ## Kết luận
 
 Qua việc tìm hiểu ba mô hình trên, mình nhận thấy AWS đã cung cấp khá đầy đủ các giải pháp để xử lý bài toán xác thực và kiểm soát quyền truy cập mà không cần tự xây dựng toàn bộ hệ thống bảo mật từ đầu.
 
-Tùy theo quy mô và kiến trúc của ứng dụng, chúng ta có thể lựa chọn ALB, API Gateway hoặc CloudFront kết hợp Lambda@Edge để đáp ứng yêu cầu thực tế. Việc tận dụng các dịch vụ được quản lý bởi AWS không chỉ giúp giảm công sức phát triển mà còn nâng cao tính bảo mật, khả năng mở rộng và độ ổn định của hệ thống.
+Tùy theo quy mô và kiến trúc của ứng dụng, chúng ta có thể lựa chọn ALB, API Gateway hoặc CloudFront kết hợp AWS Lambda để đáp ứng yêu cầu thực tế. Việc tận dụng các dịch vụ được quản lý bởi AWS không chỉ giúp giảm công sức phát triển mà còn nâng cao tính bảo mật, khả năng mở rộng và độ ổn định của hệ thống.
 
 **Nguồn tham khảo**
 

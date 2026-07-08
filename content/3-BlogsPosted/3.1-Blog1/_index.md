@@ -76,13 +76,13 @@ If the token is invalid or expired, the request is rejected directly at API Gate
 * The user or client application needs to manage the Access Token.
 * The initial configuration may be more complex than the ALB pattern.
 
-## Pattern 3: CloudFront with Lambda@Edge
+## Pattern 3: CloudFront with AWS Lambda
 
 This pattern provides a higher security level and is often used when the application serves users across multiple regions.
 
-![Pattern 3: CloudFront with Lambda@Edge](/FCAJ-workshop-template/images/3-BlogsPosted/blog1/model-3-cloudfront-lambda-edge.png)
+![Pattern 3: CloudFront with AWS Lambda](/FCAJ-workshop-template/images/3-BlogsPosted/blog1/model-3-cloudfront-lambda-edge.png)
 
-CloudFront receives the first request from the user. Before the request is forwarded to the backend, Lambda@Edge is triggered to validate the Access Token.
+CloudFront receives the first request from the user. Before the request is forwarded to the backend, AWS Lambda is triggered to validate the Access Token.
 
 If the token is valid, CloudFront continues forwarding the request to the Application Load Balancer. In addition, CloudFront can add a custom header so that the ALB knows the request actually came through CloudFront. This helps prevent direct access to the backend.
 
@@ -95,7 +95,7 @@ If the token is valid, CloudFront continues forwarding the request to the Applic
 ### Limitations
 
 * More complex to implement.
-* Lambda@Edge must be deployed in the us-east-1 Region.
+* AWS Lambda must be deployed in the us-east-1 Region.
 * Cost and operational management are higher than the other two patterns.
 
 ## Comparing the three patterns
@@ -104,13 +104,13 @@ If the application is a normal website, Application Load Balancer with Amazon Co
 
 For systems that provide APIs for web or mobile applications, API Gateway is more suitable because it can validate JWTs directly and integrates well with microservices architectures.
 
-Meanwhile, CloudFront with Lambda@Edge is suitable for larger systems that need both performance optimization and stronger security while serving users globally.
+Meanwhile, CloudFront with AWS Lambda is suitable for larger systems that need both performance optimization and stronger security while serving users globally.
 
 ## Conclusion
 
 After learning about these three patterns, I found that AWS provides enough managed solutions to solve authentication and access control problems without requiring developers to build the entire security system from scratch.
 
-Depending on the scale and architecture of the application, we can choose ALB, API Gateway, or CloudFront with Lambda@Edge to meet real-world requirements. Using AWS managed services not only reduces development effort but also improves security, scalability, and system stability.
+Depending on the scale and architecture of the application, we can choose ALB, API Gateway, or CloudFront with AWS Lambda to meet real-world requirements. Using AWS managed services not only reduces development effort but also improves security, scalability, and system stability.
 
 **References**
 
