@@ -9,23 +9,32 @@ pre: " <b> 3.3. </b> "
 ⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
 {{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# MCP Is No Longer Everything in Agentic AI Architecture
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+When people talk about AI Agents, many immediately think of **Model Context Protocol (MCP)** — the protocol that helps Agents connect to tools and data sources. However, in a new article about **Amazon Bedrock AgentCore**, AWS presents a more complete picture with three protocols serving three different purposes.
 
-Key points to know:
+## Model Context Protocol (MCP)
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+MCP acts as the bridge between an Agent and tools such as APIs, databases, Amazon S3, or internal systems. Instead of building a separate integration for each AI model, MCP provides a unified communication standard that allows Agents to discover and use tools flexibly.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+## Agent-to-Agent (A2A)
 
-...Image...
+When a single Agent is no longer enough to handle an entire business workflow, A2A allows multiple specialized Agents to collaborate with one another. For example, a Sales Agent can work together with a Finance Agent or a Support Agent to complete a user's request. This approach makes the system easier to scale and helps separate responsibilities more clearly.
 
-...Link...
+## Agent-User Interaction (AG-UI)
 
-...Guide...
+If MCP connects Agents with tools and A2A connects Agents with other Agents, then AG-UI focuses on the user experience. Instead of only responding with text, an Agent can display data tables, charts, processing states, or real-time interactive UI components.
+
+In short, it can be summarized as:
+
+```text
+MCP = Agent <-> Tools
+A2A = Agent <-> Agent
+AG-UI = Agent <-> User
+```
+
+What I find interesting is that AWS is not only focusing on building smarter AI Agents, but also standardizing how Agents connect with tools, collaborate with other Agents, and interact with users. This could become the foundation for Multi-Agent systems in enterprise environments, where each Agent takes on a specific role while still coordinating as part of a unified workflow.
+
+## References
+
+* Read the original AWS article here: https://aws.amazon.com/vi/blogs/machine-learning/build-generative-ui-for-ai-agents-on-amazon-bedrock-agentcore-with-the-ag-ui-protocol/

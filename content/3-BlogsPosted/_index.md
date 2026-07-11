@@ -15,8 +15,8 @@ This section lists and introduces the blogs I have posted to [AWS Study Group](h
 ### [BLOG 1 - ACCESS CONTROL PATTERNS FOR WEB APPLICATIONS ON AWS WITH AMAZON COGNITO](3.1-blog1/)
 This blog introduces three common access control patterns for web applications on AWS using Amazon Cognito: Application Load Balancer with Cognito, Amazon API Gateway with Cognito, and CloudFront with Lambda@Edge. These patterns help protect APIs and backend resources while reducing the need to build authentication and authorization logic from scratch.
 
-### [BLOG 2 - COMING SOON](3.2-blog2/)
-Content will be updated after the blog is completed.
+### [BLOG 2 - AI SECURITY ON AWS: FROM PROMPT INJECTION TO AMAZON BEDROCK GUARDRAILS](3.2-blog2/)
+This blog discusses common security risks in GenAI applications, such as prompt injection, sensitive data leakage, harmful content, and hallucination. It also explains how Amazon Bedrock Guardrails can work together with IAM, KMS, CloudTrail, CloudWatch, and AWS WAF to build multiple protection layers for AI systems on AWS.
 
-### [BLOG 3 - COMING SOON](3.3-blog3/)
-Content will be updated after the blog is completed.
+### [BLOG 3 - MCP IS NO LONGER EVERYTHING IN AGENTIC AI ARCHITECTURE](3.3-blog3/)
+This blog introduces a more complete view of Agentic AI architecture through three protocols: MCP for connecting Agents with tools, A2A for collaboration between Agents, and AG-UI for richer user interactions. These concepts can become an important foundation for Multi-Agent systems in enterprise environments.
