@@ -31,7 +31,8 @@ chapter: false
 
 &emsp; **Internship Duration:** From 17/04/2026 to 30/07/2026
 
-![Your profile picture](../static/images/avatar.jpg)
+![Ảnh đại diện của bạn](/FCAJ-workshop-template/images/avatar.jpg)
+
 
 ### Report Content
 
