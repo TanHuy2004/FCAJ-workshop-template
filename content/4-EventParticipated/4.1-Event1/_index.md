@@ -22,61 +22,95 @@ pre: " <b> 4.1. </b> "
 
 ### Event Agenda
 
-#### 8:30 – 9:00 AM: Settle into your seat at floor 26
+☁️ 8:30 – 9:00 AM
+Settle into your seat at floor 26
 
-Participants checked in, settled into their seats, and prepared for the morning sessions.
+☁️ 09:00 - 09:30 AM
+Context Is Everything: Making AI Actually Work for You - Tinh Truong
 
-#### 09:00 – 09:30 AM: Context Is Everything: Making AI Actually Work for You - Tinh Truong
+Why AI fails without context & what “context” really means
 
-The opening session focused on why AI often fails when it does not receive enough useful context. The speaker explained what **context** really means, how AI usage is evolving from simple prompts to memory, and the idea of a **Second AI Brain**. The session also highlighted how better context leads to better results, along with practical tips, career insights, and guidance for students who want to start building with AI.
+From prompts to memory: how AI is evolving (Second AI Brain concept)
 
-#### 09:30 – 09:45 AM: Friendly AI Assistant with Amazon Quick - Anh Pham
+How better context leads to better results (practical mindset & tips)
 
-This session introduced the capabilities of Amazon Quick for building friendly and useful AI assistants. Key topics included:
+Career insights & how students can start building with AI + Q&A
 
-- **Quick Chat Agent**: AI assistants for exploring data and analyzing insights.
-- **Quick Flows**: Intelligent workflows created with natural language and no coding required.
-- **Quick Spaces**: Shared collaborative spaces that turn individual insights into team knowledge.
-- **Quick Sight**: Dashboards and reports generated from raw data using natural language.
+☁️ 09:30 - 09:45 AM
+Friendly AI Assistant with Amazon Quick - Anh Pham
 
-#### 09:45 – 10:25 AM: From Edge To Origin: CloudFront as Your Foundation - Thinh Nguyen
+Quick Chat Agent: AI assistants for exploring data, analyzing insights
 
-This session helped participants understand how **Amazon CloudFront** can be used as a strong foundation for different workloads. Main points included:
+Quick Flows: Create intelligent workflows with natural language — no coding required
 
-- Amazon CloudFront for various workloads.
-- Cost optimization with Amazon CloudFront.
-- Security capabilities at the edge.
-- Enhanced reliability for applications.
-- Improved performance and end-user experience.
+Quick Spaces: Shared collaborative spaces that turn individual insights into team knowledge
 
-#### 10:25 – 10:55 AM: 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality - Team VIB
+Quick Sight: Build dashboards and reports from raw data using natural language
 
-Team VIB shared their journey of building **UTMorpho** in 36 hours during LotusHacks. The session provided a practical view of how an idea can become a working demo under time pressure:
+☁️ 09:45 – 10:25 AM
+From Edge To Origin: CloudFront as Your Foundation - Thinh Nguyen
 
-- Why the team joined LotusHacks.
-- The brainstorming journey from zero to idea.
-- Defining the problem and shaping UTMorpho.
-- Building under pressure during a 36-hour development sprint.
-- Challenges, failures, and turning points.
-- Product overview, demo, key learnings, and next steps.
+Amazon CloudFront for every workload
 
-#### 10:55 – 11:00 AM: Break
+Cost optimization with Amazon CloudFront
 
-A short break allowed participants to rest and prepare for the next sessions.
+Security capabilities
 
-#### 11:00 – 11:30 AM: Non-Determinism of "Deterministic" LLM Settings - Duc Dao
+Enhanced reliability with Amazon CloudFront
 
-This session explained how LLMs choose the next token and clarified a common assumption: **temperature = 0 does not always guarantee full determinism**. The speaker discussed how inference optimizations can still lead to different outputs, the practical impact of this behavior, and mitigation strategies for teams building LLM-powered systems.
+Enhanced performance with Amazon CloudFront
 
-#### 11:30 – 12:00 PM: Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring - Vy Lam
+☁️ 10:25 - 10:55 AM
+36 hrs with LotusHacks – Building UTMorpho from Idea to Reality - Team VIB
 
-The final session focused on **enterprise-grade multi-agent systems** through the case study of startup credit scoring. Main topics included:
+Why We Joined LotusHacks
 
-- The structural mismatch between banking systems and startup data.
-- When to use a single agent and when not to.
-- The multi-agent paradigm.
-- Blueprint of a **Virtual Credit Committee**.
-- Guardrails, compliance, operational ROI, implementation roadmap, and next steps.
+From Zero to Idea – The Brainstorming Journey
+
+Defining the Problem & Shaping UTMorpho
+
+Building Under Pressure – 36-Hour Development Sprint
+
+Challenges, Failures & Turning Points
+
+UTMorpho – Product Overview & Demo
+
+Key Learnings & What’s Next
+
+☕️ 10:55 – 11:00 AM
+Break
+
+☁️ 11:00 - 11:30 AM
+Non-Determinism of "Deterministic" LLM Settings - Duc Dao
+
+How LLMs choose the next token
+
+Assumption: Temperature=0 guarantees determinism
+
+Reality: Inference optimizations say otherwise
+
+Practical impacts
+
+Mitigation strategies
+
+☁️ 11:30 - 12:00 PM
+Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring - Vy Lam
+
+The structural mismatch between banking systems and startup data.
+
+Single Agent: When to and When Not To
+
+The Multi-Agent Paradigm
+
+Blueprint of a Virtual Credit Committee
+
+Guardrails & Compliance
+
+Operational ROI & Implementation Roadmap
+
+What's Next
+
+Thank you & Q&A
 
 ### Speakers
 

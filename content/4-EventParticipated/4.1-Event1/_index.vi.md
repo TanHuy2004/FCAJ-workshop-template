@@ -22,61 +22,95 @@ pre: " <b> 4.1. </b> "
 
 ### Lịch Trình Sự Kiện
 
-#### 8:30 – 9:00 AM: Ổn định chỗ ngồi tại tầng 26
+☁️ 8:30 – 9:00 AM
+Ổn định chỗ ngồi tại tầng 26
 
-Người tham gia có thời gian check-in, ổn định vị trí và chuẩn bị cho các phiên chia sẻ trong buổi sáng.
+☁️ 09:00 - 09:30 AM
+Context Is Everything: Làm cho AI thực sự hiệu quả với bạn - Tinh Truong
 
-#### 09:00 – 09:30 AM: Context Is Everything: Making AI Actually Work for You - Tinh Truong
+Vì sao AI thất bại khi thiếu ngữ cảnh và “ngữ cảnh” thực sự có nghĩa là gì
 
-Phiên mở đầu tập trung vào việc giải thích vì sao AI thường không tạo ra kết quả tốt nếu thiếu ngữ cảnh phù hợp. Diễn giả chia sẻ khái niệm **context**, quá trình phát triển từ prompt đơn giản đến memory và ý tưởng **Second AI Brain**. Nội dung cũng nhấn mạnh cách cung cấp context tốt hơn để nhận được kết quả chính xác hơn, đồng thời đưa ra lời khuyên nghề nghiệp cho sinh viên muốn bắt đầu xây dựng sản phẩm với AI.
+Từ prompt đến memory: AI đang phát triển như thế nào (khái niệm Second AI Brain)
 
-#### 09:30 – 09:45 AM: Friendly AI Assistant with Amazon Quick - Anh Pham
+Ngữ cảnh tốt hơn giúp tạo ra kết quả tốt hơn như thế nào (tư duy thực tế và mẹo sử dụng)
 
-Phiên này giới thiệu các khả năng của Amazon Quick trong việc xây dựng trợ lý AI thân thiện và dễ sử dụng. Các nội dung nổi bật gồm:
+Định hướng nghề nghiệp và cách sinh viên có thể bắt đầu xây dựng sản phẩm với AI + Hỏi đáp
 
-- **Quick Chat Agent**: Trợ lý AI hỗ trợ khám phá dữ liệu và phân tích insight.
-- **Quick Flows**: Tạo workflow thông minh bằng ngôn ngữ tự nhiên mà không cần lập trình.
-- **Quick Spaces**: Không gian cộng tác giúp biến insight cá nhân thành tri thức chung của nhóm.
-- **Quick Sight**: Xây dựng dashboard và báo cáo từ dữ liệu thô bằng ngôn ngữ tự nhiên.
+☁️ 09:30 - 09:45 AM
+Trợ lý AI thân thiện với Amazon Quick - Anh Pham
 
-#### 09:45 – 10:25 AM: From Edge To Origin: CloudFront as Your Foundation - Thinh Nguyen
+Quick Chat Agent: Trợ lý AI để khám phá dữ liệu và phân tích insight
 
-Phiên chia sẻ giúp người tham gia hiểu cách sử dụng **Amazon CloudFront** như một nền tảng quan trọng cho nhiều loại workload. Nội dung bao gồm:
+Quick Flows: Tạo các workflow thông minh bằng ngôn ngữ tự nhiên — không cần lập trình
 
-- Ứng dụng Amazon CloudFront cho nhiều loại hệ thống khác nhau.
-- Tối ưu chi phí khi phân phối nội dung qua CloudFront.
-- Các khả năng bảo mật ở tầng edge.
-- Cải thiện độ tin cậy cho ứng dụng.
-- Nâng cao hiệu năng và trải nghiệm người dùng cuối.
+Quick Spaces: Không gian cộng tác chung giúp biến insight cá nhân thành tri thức của nhóm
 
-#### 10:25 – 10:55 AM: 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality - Team VIB
+Quick Sight: Xây dựng dashboard và báo cáo từ dữ liệu thô bằng ngôn ngữ tự nhiên
 
-Team VIB chia sẻ hành trình xây dựng sản phẩm **UTMorpho** trong 36 giờ tại LotusHacks. Phiên này mang đến góc nhìn thực tế về quá trình biến một ý tưởng ban đầu thành sản phẩm demo:
+☁️ 09:45 – 10:25 AM
+Từ Edge đến Origin: CloudFront làm nền tảng của bạn - Thinh Nguyen
 
-- Lý do tham gia LotusHacks.
-- Quá trình brainstorming từ con số 0.
-- Cách xác định vấn đề và định hình UTMorpho.
-- Trải nghiệm xây dựng sản phẩm dưới áp lực thời gian 36 giờ.
-- Những thử thách, thất bại và bước ngoặt trong quá trình phát triển.
-- Tổng quan sản phẩm, demo, bài học và định hướng tiếp theo.
+Amazon CloudFront cho mọi workload
 
-#### 10:55 – 11:00 AM: Break
+Tối ưu chi phí với Amazon CloudFront
 
-Thời gian nghỉ ngắn giúp người tham gia thư giãn và chuẩn bị cho các phiên tiếp theo.
+Các khả năng bảo mật
 
-#### 11:00 – 11:30 AM: Non-Determinism of "Deterministic" LLM Settings - Duc Dao
+Tăng cường độ tin cậy với Amazon CloudFront
 
-Phiên này giải thích cách LLM lựa chọn token tiếp theo và làm rõ một hiểu lầm phổ biến: **temperature = 0 không luôn đảm bảo tính quyết định tuyệt đối**. Diễn giả phân tích vì sao các tối ưu trong quá trình inference có thể tạo ra kết quả khác nhau, tác động thực tế của hiện tượng này và một số chiến lược giảm thiểu khi triển khai ứng dụng dùng LLM.
+Tăng cường hiệu năng với Amazon CloudFront
 
-#### 11:30 – 12:00 PM: Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring - Vy Lam
+☁️ 10:25 - 10:55 AM
+36 giờ cùng LotusHacks – Xây dựng UTMorpho từ ý tưởng đến hiện thực - Team VIB
 
-Phiên cuối tập trung vào hệ thống **multi-agent** ở cấp độ doanh nghiệp thông qua bài toán chấm điểm tín dụng cho startup. Nội dung nổi bật gồm:
+Vì sao chúng tôi tham gia LotusHacks
 
-- Sự khác biệt giữa hệ thống ngân hàng truyền thống và dữ liệu của startup.
-- Khi nào nên dùng single agent và khi nào cần multi-agent.
-- Tư duy thiết kế multi-agent paradigm.
-- Blueprint của một **Virtual Credit Committee**.
-- Guardrails, compliance, ROI vận hành và roadmap triển khai.
+Từ con số 0 đến ý tưởng – Hành trình brainstorming
+
+Xác định vấn đề và định hình UTMorpho
+
+Xây dựng dưới áp lực – Sprint phát triển trong 36 giờ
+
+Thử thách, thất bại và những bước ngoặt
+
+UTMorpho – Tổng quan sản phẩm và demo
+
+Bài học chính và định hướng tiếp theo
+
+☕️ 10:55 – 11:00 AM
+Nghỉ giải lao
+
+☁️ 11:00 - 11:30 AM
+Tính không quyết định của các thiết lập LLM “quyết định” - Duc Dao
+
+Cách LLM chọn token tiếp theo
+
+Giả định: Temperature=0 đảm bảo tính quyết định
+
+Thực tế: Các tối ưu trong quá trình inference lại cho kết quả khác
+
+Tác động thực tiễn
+
+Các chiến lược giảm thiểu
+
+☁️ 11:30 - 12:00 PM
+Hệ thống Multi-Agent cấp doanh nghiệp: Trường hợp chấm điểm tín dụng startup - Vy Lam
+
+Sự không tương thích về cấu trúc giữa hệ thống ngân hàng và dữ liệu startup.
+
+Single Agent: Khi nào nên dùng và khi nào không nên dùng
+
+Mô hình Multi-Agent
+
+Bản thiết kế của một Hội đồng Tín dụng Ảo
+
+Guardrails và Compliance
+
+ROI vận hành và lộ trình triển khai
+
+Điều gì tiếp theo
+
+Cảm ơn và Hỏi đáp
 
 ### Danh Sách Diễn Giả
 
