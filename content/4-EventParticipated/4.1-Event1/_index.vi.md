@@ -6,206 +6,139 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 # Bài thu hoạch sự kiện “AI & Cloud Workshop”
 
 ### Mục Đích Của Sự Kiện
 
-- Giúp người tham gia hiểu rõ hơn cách ứng dụng AI hiệu quả trong học tập, công việc và phát triển sản phẩm.
-- Chia sẻ vai trò của **context** trong việc làm việc với AI và cách xây dựng tư duy sử dụng AI đúng cách.
-- Giới thiệu các công cụ AI hỗ trợ phân tích dữ liệu, xây dựng workflow và tạo dashboard bằng ngôn ngữ tự nhiên.
-- Cung cấp kiến thức thực tế về Amazon CloudFront, tối ưu chi phí, bảo mật, hiệu năng và độ tin cậy.
-- Chia sẻ kinh nghiệm xây dựng sản phẩm trong hackathon, hệ thống multi-agent và các vấn đề thực tế khi triển khai LLM.
+- Giới thiệu cách AI hỗ trợ vận hành hệ thống cloud, từ phát hiện sự cố đến tự động xử lý sự cố.
+- Chia sẻ phương pháp xây dựng voice agent có khả năng giao tiếp tự nhiên và mở rộng ở quy mô lớn.
+- Trình bày cách AWS DevOps Agent hỗ trợ đội ngũ vận hành rút ngắn thời gian phát hiện và khắc phục sự cố.
+- Giới thiệu việc ứng dụng AI và phân tích dữ liệu vào hoạt động nhân sự và hoạch định nguồn nhân lực chiến lược.
+- Cung cấp kiến thức tổng quan về cách xây dựng kết nối MCP riêng tư, an toàn với Amazon Quick.
 
 ### Lịch Trình Sự Kiện
 
-☁️ 8:30 – 9:00 AM
-Ổn định chỗ ngồi tại tầng 26
+#### 8:30 – 9:00 AM — Ổn định chỗ ngồi
 
-☁️ 09:00 - 09:30 AM
-Context Is Everything: Làm cho AI thực sự hiệu quả với bạn - Tinh Truong
+#### 09:00 - 09:25 AM — Deep Response Engine: Từ phát hiện đến tự động xử lý
 
-Vì sao AI thất bại khi thiếu ngữ cảnh và “ngữ cảnh” thực sự có nghĩa là gì
+- Rào cản về độ phức tạp trong hoạt động vận hành cloud hiện đại
+- Chuyển từ hệ thống dựa trên cảnh báo sang hệ thống hướng đến hành động
+- Tổng quan kiến trúc Deep Response Engine
+- Demo trực tiếp quy trình tự động ứng phó sự cố
+- Tác động đối với doanh nghiệp: giảm chi phí và vận hành không gián đoạn
 
-Từ prompt đến memory: AI đang phát triển như thế nào (khái niệm Second AI Brain)
+#### 09:25 - 09:55 AM — Voice Agents: Xây dựng hội thoại AI giống con người ở quy mô lớn
 
-Ngữ cảnh tốt hơn giúp tạo ra kết quả tốt hơn như thế nào (tư duy thực tế và mẹo sử dụng)
+- Quá trình phát triển từ IVR và chatbot đến AI voice agent
+- Các thách thức chính: độ trễ, độ chính xác và khả năng tương tác tự nhiên
+- Amazon Nova Sonic và mô hình nền tảng speech-to-speech
+- Kiến trúc gồm telephony, streaming, Bedrock và các công cụ MCP
+- Các trường hợp sử dụng trong doanh nghiệp, phương pháp tốt nhất và demo trực tiếp
 
-Định hướng nghề nghiệp và cách sinh viên có thể bắt đầu xây dựng sản phẩm với AI + Hỏi đáp
+#### 09:55 - 10:20 AM — AWS DevOps Agent: Người đồng đội vận hành luôn sẵn sàng
 
-☁️ 09:30 - 09:45 AM
-Trợ lý AI thân thiện với Amazon Quick - Anh Pham
+- Tổng quan về AWS DevOps Agent
+- Giảm MTTD và MTTR bằng hoạt động vận hành dựa trên AI
+- Hỗ trợ môi trường multi-cloud và hybrid
+- Bedrock AgentCore và phương pháp suy luận multi-agent
+- Các trường hợp sử dụng thực tế và phần demo với ECS
 
-Quick Chat Agent: Trợ lý AI để khám phá dữ liệu và phân tích insight
+#### ☁️ 10:20 - 10:45 AM — Năng suất được hỗ trợ bởi AI: Hoạch định nguồn nhân lực cho doanh nghiệp
 
-Quick Flows: Tạo các workflow thông minh bằng ngôn ngữ tự nhiên — không cần lập trình
+- Những thách thức trong quá trình chuyển đổi nhân sự tại doanh nghiệp hiện đại
+- Tổng quan về Amazon Quick và các khả năng hỗ trợ nhân sự
+- Tăng tốc hoạt động nhân sự bằng tự động hóa
+- Phân tích lực lượng lao động và thông tin chuyên sâu dựa trên dữ liệu
+- Hoạch định nguồn nhân lực chiến lược để hỗ trợ doanh nghiệp ra quyết định
 
-Quick Spaces: Không gian cộng tác chung giúp biến insight cá nhân thành tri thức của nhóm
+#### 10:45 - 11:30 AM — Xây dựng kết nối MCP riêng tư, an toàn với Amazon Quick
 
-Quick Sight: Xây dựng dashboard và báo cáo từ dữ liệu thô bằng ngôn ngữ tự nhiên
-
-☁️ 09:45 – 10:25 AM
-Từ Edge đến Origin: CloudFront làm nền tảng của bạn - Thinh Nguyen
-
-Amazon CloudFront cho mọi workload
-
-Tối ưu chi phí với Amazon CloudFront
-
-Các khả năng bảo mật
-
-Tăng cường độ tin cậy với Amazon CloudFront
-
-Tăng cường hiệu năng với Amazon CloudFront
-
-☁️ 10:25 - 10:55 AM
-36 giờ cùng LotusHacks – Xây dựng UTMorpho từ ý tưởng đến hiện thực - Team VIB
-
-Vì sao chúng tôi tham gia LotusHacks
-
-Từ con số 0 đến ý tưởng – Hành trình brainstorming
-
-Xác định vấn đề và định hình UTMorpho
-
-Xây dựng dưới áp lực – Sprint phát triển trong 36 giờ
-
-Thử thách, thất bại và những bước ngoặt
-
-UTMorpho – Tổng quan sản phẩm và demo
-
-Bài học chính và định hướng tiếp theo
-
-☕️ 10:55 – 11:00 AM
-Nghỉ giải lao
-
-☁️ 11:00 - 11:30 AM
-Tính không quyết định của các thiết lập LLM “quyết định” - Duc Dao
-
-Cách LLM chọn token tiếp theo
-
-Giả định: Temperature=0 đảm bảo tính quyết định
-
-Thực tế: Các tối ưu trong quá trình inference lại cho kết quả khác
-
-Tác động thực tiễn
-
-Các chiến lược giảm thiểu
-
-☁️ 11:30 - 12:00 PM
-Hệ thống Multi-Agent cấp doanh nghiệp: Trường hợp chấm điểm tín dụng startup - Vy Lam
-
-Sự không tương thích về cấu trúc giữa hệ thống ngân hàng và dữ liệu startup.
-
-Single Agent: Khi nào nên dùng và khi nào không nên dùng
-
-Mô hình Multi-Agent
-
-Bản thiết kế của một Hội đồng Tín dụng Ảo
-
-Guardrails và Compliance
-
-ROI vận hành và lộ trình triển khai
-
-Điều gì tiếp theo
-
-Cảm ơn và Hỏi đáp
-
-### Danh Sách Diễn Giả
-
-- **Tinh Truong** - Diễn giả phiên “Context Is Everything: Making AI Actually Work for You”
-- **Anh Pham** - Diễn giả phiên “Friendly AI Assistant with Amazon Quick”
-- **Thinh Nguyen** - Diễn giả phiên “From Edge To Origin: CloudFront as Your Foundation”
-- **Team VIB** - Diễn giả phiên “36 hrs with LotusHacks – Building UTMorpho from Idea to Reality”
-- **Duc Dao** - Diễn giả phiên “Non-Determinism of \"Deterministic\" LLM Settings”
-- **Vy Lam** - Diễn giả phiên “Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring”
+- Giới thiệu Amazon Quick như một nền tảng trợ lý AI
+- MCP (Model Context Protocol) và vai trò của giao thức này trong việc mở rộng khả năng hệ thống
+- Những thách thức bảo mật trong các tích hợp dựa trên MCP
+- Cấu hình kết nối VPC riêng tư cho Amazon Quick
+- Demo và chia sẻ kinh nghiệm triển khai thực tế
 
 ### Nội Dung Nổi Bật
 
-#### Vai trò của context trong AI
+#### Chuyển từ cảnh báo sang tự động ứng phó sự cố
 
-Một điểm quan trọng được nhấn mạnh là AI không chỉ phụ thuộc vào prompt, mà còn phụ thuộc rất nhiều vào **ngữ cảnh** mà người dùng cung cấp. Khi context rõ ràng, đầy đủ và đúng mục tiêu, kết quả AI tạo ra sẽ chính xác, hữu ích và phù hợp hơn.
+Phiên đầu tiên giúp em hiểu rõ một vấn đề lớn trong vận hành cloud hiện đại: hệ thống ngày càng phức tạp nên đội ngũ kỹ thuật khó có thể xử lý thủ công mọi cảnh báo. Deep Response Engine cho thấy một phương pháp chủ động hơn, trong đó AI có thể phát hiện, phân tích và phản hồi sự cố. Phần demo trực tiếp giúp em dễ hình dung quy trình tự động ứng phó sự cố cũng như tiềm năng giảm chi phí vận hành và hướng đến hoạt động không gián đoạn.
 
-#### AI assistant và workflow thông minh
+#### Xây dựng AI voice agent tự nhiên hơn
 
-Các công cụ như Amazon Quick cho thấy xu hướng đưa AI vào quy trình làm việc hằng ngày. Người dùng có thể trò chuyện với dữ liệu, tạo workflow, xây dựng không gian cộng tác và tạo dashboard mà không cần thao tác kỹ thuật phức tạp.
+Phiên về voice agent trình bày quá trình phát triển từ hệ thống IVR và chatbot truyền thống đến hội thoại AI gần giống con người. Tôi hiểu rằng một voice agent hữu ích phải cân bằng được độ trễ thấp, độ chính xác và khả năng tương tác tự nhiên. Phiên này còn giới thiệu Amazon Nova Sonic, telephony, streaming, Amazon Bedrock và các công cụ MCP như những thành phần trong kiến trúc có thể mở rộng cho doanh nghiệp.
 
-#### CloudFront từ edge đến origin
+#### Sử dụng AI như một đồng đội vận hành
 
-CloudFront không chỉ là dịch vụ CDN mà còn có thể trở thành nền tảng giúp tối ưu chi phí, tăng bảo mật, cải thiện độ tin cậy và nâng cao hiệu năng cho nhiều workload khác nhau.
+AWS DevOps Agent được giới thiệu như một người đồng đội luôn sẵn sàng, có thể hỗ trợ giảm Mean Time to Detect (MTTD) và Mean Time to Repair (MTTR). Tôi đặc biệt ấn tượng với phương pháp suy luận multi-agent sử dụng Bedrock AgentCore vì nó cho thấy nhiều AI agent có thể phối hợp khi điều tra vấn đề vận hành. Phần demo ECS cũng giúp liên hệ kiến thức với một tình huống triển khai thực tế trong môi trường cloud, multi-cloud và hybrid.
 
-#### Tư duy xây dựng sản phẩm trong hackathon
+#### Nâng cao hiệu quả hoạch định nguồn nhân lực bằng AI
 
-Câu chuyện UTMorpho cho thấy việc xây dựng sản phẩm trong thời gian ngắn đòi hỏi khả năng xác định vấn đề nhanh, phối hợp nhóm tốt, chấp nhận thử sai và liên tục điều chỉnh để hoàn thiện demo.
+Phiên hoạch định nguồn nhân lực cho thấy AI không chỉ hữu ích với đội ngũ kỹ thuật mà còn có thể hỗ trợ hoạt động nhân sự của doanh nghiệp. Amazon Quick có thể góp phần tự động hóa quy trình, phân tích dữ liệu lực lượng lao động và cung cấp insight dựa trên dữ liệu. Dưới góc nhìn của một sinh viên, phiên này giúp em hiểu rằng AI còn có thể hỗ trợ người quản lý xây dựng kế hoạch chiến lược chứ không chỉ thực hiện các công việc lặp lại.
 
-#### Tính không quyết định của LLM
+#### Bảo mật kết nối MCP riêng tư
 
-Ngay cả khi cấu hình tưởng như “deterministic”, LLM vẫn có thể tạo ra kết quả khác nhau do các yếu tố trong quá trình inference. Điều này nhắc nhở lập trình viên cần thiết kế hệ thống có kiểm thử, logging, fallback và chiến lược đánh giá phù hợp.
-
-#### Multi-agent system trong doanh nghiệp
-
-Bài toán credit scoring cho startup minh họa cách multi-agent có thể chia nhỏ vai trò, mô phỏng hội đồng đánh giá ảo và hỗ trợ quyết định trong môi trường yêu cầu guardrails, compliance và ROI rõ ràng.
+Phiên cuối tập trung vào MCP và vai trò của giao thức này trong việc mở rộng trợ lý AI bằng các công cụ và nguồn dữ liệu bổ sung. Nội dung cũng nhấn mạnh rằng khả năng mở rộng phải được thiết kế song song với bảo mật. Phần giải thích về kết nối VPC riêng tư của Amazon Quick cùng demo triển khai giúp em hiểu cách doanh nghiệp có thể kết nối tài nguyên nội bộ với nền tảng AI mà vẫn duy trì khả năng kiểm soát mạng.
 
 ### Những Gì Học Được
 
-#### Tư duy sử dụng AI hiệu quả
+#### Vận hành cloud với sự hỗ trợ của AI
 
-- AI hoạt động tốt hơn khi được cung cấp context rõ ràng, cụ thể và có mục tiêu.
-- Prompt chỉ là một phần; memory, dữ liệu nền và cách tổ chức thông tin cũng rất quan trọng.
-- Sinh viên có thể bắt đầu xây dựng sản phẩm AI từ các bài toán nhỏ, gần gũi và có giá trị thực tế.
+- Hệ thống cloud hiện đại cần tiến xa hơn việc chỉ gửi cảnh báo và hướng đến hỗ trợ các hành động xử lý cụ thể.
+- Tự động ứng phó sự cố có thể giúp giảm công việc thủ công, chi phí vận hành, MTTD và MTTR.
+- Giải pháp AI trong vận hành vẫn cần được thiết kế với cơ chế kiểm soát rõ ràng, dữ liệu đáng tin cậy và sự giám sát phù hợp của con người.
 
-#### Kiến thức về cloud và hạ tầng
+#### Voice AI và kiến trúc agent
 
-- CloudFront có thể hỗ trợ nhiều workload, không chỉ dùng để cache nội dung tĩnh.
-- Edge layer đóng vai trò quan trọng trong bảo mật, reliability và performance.
-- Tối ưu chi phí cần được xem xét cùng với hiệu năng và trải nghiệm người dùng.
+- Tương tác bằng giọng nói tự nhiên phụ thuộc vào độ trễ, độ chính xác và chất lượng hội thoại.
+- Mô hình nền tảng speech-to-speech như Amazon Nova Sonic có thể tạo ra trải nghiệm tốt hơn so với các hệ thống giọng nói cũ.
+- Telephony, streaming, Amazon Bedrock và các công cụ MCP phải phối hợp với nhau để tạo thành một giải pháp voice agent hoàn chỉnh cho doanh nghiệp.
 
-#### Kinh nghiệm phát triển sản phẩm
+#### Năng suất và hoạch định trong doanh nghiệp
 
-- Hackathon giúp rèn luyện khả năng làm việc dưới áp lực thời gian.
-- Một sản phẩm tốt cần bắt đầu từ việc hiểu đúng vấn đề, không chỉ tập trung vào công nghệ.
-- Demo, phản hồi và khả năng cải tiến nhanh là yếu tố quan trọng trong quá trình phát triển.
+- AI có thể tự động hóa một phần hoạt động nhân sự và giúp doanh nghiệp phân tích dữ liệu lực lượng lao động hiệu quả hơn.
+- Insight dựa trên dữ liệu có thể hỗ trợ hoạch định nhân lực dài hạn và quá trình ra quyết định.
+- Một giải pháp AI thành công cần giải quyết nhu cầu thực tế của doanh nghiệp thay vì chỉ sử dụng AI vì đây là công nghệ mới.
 
-#### Hiểu sâu hơn về LLM và multi-agent
+#### Bảo mật và kết nối riêng tư
 
-- Temperature thấp không đảm bảo kết quả luôn giống nhau trong mọi môi trường triển khai.
-- Hệ thống dùng LLM cần có cơ chế kiểm soát chất lượng và giảm rủi ro.
-- Multi-agent phù hợp khi bài toán có nhiều góc nhìn, nhiều bước đánh giá hoặc yêu cầu phân tách vai trò rõ ràng.
+- MCP giúp trợ lý AI có khả năng mở rộng tốt hơn, nhưng mỗi kết nối đến công cụ và dữ liệu đều tạo thêm vấn đề cần xem xét về bảo mật.
+- Kết nối VPC riêng tư rất quan trọng khi doanh nghiệp cần truy cập tài nguyên nội bộ mà không công khai chúng ra Internet.
+- Bảo mật nên được xem xét ngay từ giai đoạn thiết kế kiến trúc, không phải chỉ bổ sung sau khi đã triển khai.
 
 ### Ứng Dụng Vào Công Việc Và Học Tập
 
-- Khi dùng AI để học tập hoặc lập trình, cần cung cấp đầy đủ mục tiêu, dữ liệu liên quan, ràng buộc và ví dụ mong muốn.
-- Có thể áp dụng AI assistant để phân tích dữ liệu, tóm tắt tài liệu, tạo báo cáo hoặc hỗ trợ ra quyết định.
-- Sử dụng CloudFront cho các ứng dụng web cần cải thiện tốc độ tải, bảo mật và khả năng chịu tải.
-- Khi xây dựng sản phẩm, nên bắt đầu từ vấn đề thực tế, tạo prototype nhanh và liên tục cải tiến dựa trên phản hồi.
-- Với các ứng dụng LLM quan trọng, cần thiết kế guardrails, logging, đánh giá đầu ra và fallback để đảm bảo độ tin cậy.
-- Có thể nghiên cứu multi-agent system cho các bài toán cần nhiều vai trò phối hợp như đánh giá hồ sơ, phân tích rủi ro hoặc hỗ trợ ra quyết định.
+- Tôi có thể áp dụng tư duy ứng phó sự cố vào project sinh viên bằng cách cải thiện monitoring, ghi lại các lỗi thường gặp và tự động hóa những bước khôi phục an toàn.
+- Tôi có thể tìm hiểu Amazon Bedrock, Amazon Nova Sonic và kiến trúc streaming để hiểu rõ hơn cách xây dựng ứng dụng giọng nói thời gian thực.
+- Khi thiết kế một AI agent, em cần xác định rõ trách nhiệm, công cụ được phép sử dụng, quyền truy cập dữ liệu và những tình huống cần con người phê duyệt.
+- Tôi có thể sử dụng bài toán phân tích nguồn nhân lực làm ví dụ khi học cách dữ liệu hỗ trợ quyết định kinh doanh bên ngoài lĩnh vực phát triển phần mềm.
+- Khi thử nghiệm MCP, em nên giới hạn quyền truy cập, bảo vệ thông tin xác thực, kiểm tra đầu vào của công cụ và tránh đưa dịch vụ riêng tư trực tiếp lên Internet.
+- Các phần demo về ECS và kết nối riêng tư có thể trở thành tài liệu tham khảo cho bài tập cloud và project cá nhân trong tương lai.
 
 ### Trải Nghiệm Trong Sự Kiện
 
-Tham gia sự kiện là một trải nghiệm rất hữu ích vì nội dung không chỉ tập trung vào lý thuyết mà còn có nhiều ví dụ thực tế về AI, cloud, hackathon và hệ thống doanh nghiệp. Các phiên chia sẻ giúp tôi nhìn rõ hơn cách AI đang được ứng dụng trong nhiều bối cảnh khác nhau, từ hỗ trợ cá nhân, phân tích dữ liệu, xây dựng sản phẩm đến ra quyết định trong doanh nghiệp.
+Tham gia sự kiện là một trải nghiệm học tập rất hữu ích vì các phiên chia sẻ đã kết nối kiến thức AI với những vấn đề thực tế trong doanh nghiệp. Trước sự kiện, em chủ yếu nghĩ AI là công cụ tạo nội dung hoặc hỗ trợ lập trình. Sau khi nghe các bài trình bày, em hiểu rõ hơn rằng AI còn có thể hỗ trợ ứng phó sự cố, giao tiếp bằng giọng nói, DevOps, hoạch định nhân sự và kết nối an toàn với hệ thống nội bộ của doanh nghiệp.
 
-#### Học hỏi từ các diễn giả
+#### Học hỏi qua các phần demo thực tế
 
-- Mỗi diễn giả mang đến một góc nhìn khác nhau về AI và cloud, giúp nội dung sự kiện đa dạng và dễ tiếp cận.
-- Các phần chia sẻ về context, LLM và multi-agent giúp tôi hiểu rằng xây dựng ứng dụng AI cần nhiều hơn là chỉ gọi API hoặc viết prompt.
-- Phiên CloudFront giúp tôi thấy rõ vai trò của hạ tầng edge trong việc cải thiện trải nghiệm người dùng.
+Các phần demo là nội dung khiến em nhớ nhất. Chúng giúp biến sơ đồ kiến trúc và thuật ngữ kỹ thuật thành những quy trình mà em có thể theo dõi. Demo tự động ứng phó sự cố cho thấy hệ thống có thể chuyển từ phát hiện vấn đề sang hành động như thế nào, trong khi phần walkthrough với ECS giúp em hiểu cách AI operations agent có thể được sử dụng trong môi trường cloud thực tế.
 
-#### Trải nghiệm kỹ thuật thực tế
+#### Mở rộng kiến thức kỹ thuật
 
-- Tôi hiểu thêm cách AI assistant có thể hỗ trợ phân tích dữ liệu và tạo workflow bằng ngôn ngữ tự nhiên.
-- Câu chuyện UTMorpho giúp tôi hình dung rõ hơn quá trình phát triển sản phẩm trong môi trường áp lực cao.
-- Các nội dung về LLM và multi-agent cho thấy tầm quan trọng của việc thiết kế hệ thống cẩn thận, có kiểm soát và phù hợp với nhu cầu thực tế.
+Tôi đã biết thêm nhiều khái niệm mới như MTTD, MTTR, mô hình nền tảng speech-to-speech, Bedrock AgentCore, suy luận multi-agent và kết nối MCP riêng tư. Một số nội dung còn khá nâng cao đối với em, nhưng chúng giúp em xác định rõ hơn những kiến thức cần tiếp tục học trong lĩnh vực cloud computing và phát triển ứng dụng AI.
 
-#### Kết nối và định hướng phát triển
+#### Hiểu tầm quan trọng của bảo mật và giá trị kinh doanh
 
-- Sự kiện giúp tôi có thêm động lực để học sâu hơn về AI, cloud và phát triển sản phẩm.
-- Tôi nhận ra rằng kỹ năng đặt vấn đề, cung cấp context và đánh giá kết quả là rất quan trọng khi làm việc với AI.
-- Những kiến thức học được có thể áp dụng vào các project cá nhân, bài tập, nghiên cứu hoặc định hướng nghề nghiệp trong tương lai.
+Một bài học quan trọng khác là giải pháp kỹ thuật cần tạo ra giá trị có thể đo lường và vẫn phải bảo đảm an toàn. Giảm chi phí, duy trì hoạt động không gián đoạn, tăng tốc quy trình nhân sự và hỗ trợ quyết định về nguồn nhân lực là những kết quả doanh nghiệp quan tâm. Đồng thời, phiên MCP nhắc em rằng việc kết nối AI với công cụ và dữ liệu nội bộ đòi hỏi kiểm soát truy cập và thiết kế mạng cẩn thận.
+
+#### Định hướng học tập trong tương lai
+
+Sau sự kiện, em muốn tìm hiểu thêm về Amazon Bedrock, ECS, mạng VPC, MCP và kiến trúc AI agent. Tôi cũng muốn xây dựng một project nhỏ kết hợp monitoring với trợ lý AI để thực hành những kiến thức này thay vì chỉ học về mặt lý thuyết.
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-*Thêm các hình ảnh của các bạn tại đây*
+*Thêm các hình ảnh của bạn tại đây*
 
-> Tổng thể, sự kiện mang lại nhiều kiến thức thực tế về AI và cloud, đồng thời giúp tôi hiểu rõ hơn cách kết hợp tư duy sản phẩm, kỹ thuật và ngữ cảnh để xây dựng các giải pháp hữu ích hơn.
+> Nhìn chung, sự kiện giúp em hiểu cách AI có thể trở thành một người đồng đội thực tế trong vận hành cloud và công việc doanh nghiệp. Sự kiện cũng tạo động lực để em tiếp tục phát triển kiến thức kỹ thuật và khả năng kết nối công nghệ với nhu cầu kinh doanh thực tế.
