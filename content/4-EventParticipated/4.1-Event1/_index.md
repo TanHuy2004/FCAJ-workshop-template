@@ -20,7 +20,7 @@ pre: " <b> 4.1. </b> "
 
 #### 8:30 – 9:00 AM — Settle into your seat
 
-#### ☁️ 09:00 - 09:25 AM — Deep Response Engine: From Detection to Autonomous Resolution
+#### 09:00 - 09:25 AM — Deep Response Engine: From Detection to Autonomous Resolution
 
 - The complexity wall in modern cloud operations
 - Shift from alert-driven to action-driven systems
@@ -28,7 +28,7 @@ pre: " <b> 4.1. </b> "
 - Live demo of autonomous incident response
 - Business impact: cost reduction and zero-downtime operations
 
-#### ☁️ 09:25 - 09:55 AM — Voice Agents: Building Human-Like AI Conversations at Scale
+#### 09:25 - 09:55 AM — Voice Agents: Building Human-Like AI Conversations at Scale
 
 - Evolution from IVR and chatbots to AI voice agents
 - Key challenges: latency, accuracy, and natural interaction
@@ -36,7 +36,7 @@ pre: " <b> 4.1. </b> "
 - Architecture: telephony, streaming, Bedrock, MCP tools
 - Enterprise use cases, best practices, and live demo
 
-#### ☁️ 09:55 - 10:20 AM — AWS DevOps Agent: Your Always-Available Operations Teammate
+#### 09:55 - 10:20 AM — AWS DevOps Agent: Your Always-Available Operations Teammate
 
 - Overview of AWS DevOps Agent
 - Reducing MTTD and MTTR with AI-driven operations
@@ -44,7 +44,7 @@ pre: " <b> 4.1. </b> "
 - Bedrock AgentCore and multi-agent reasoning approach
 - Real-world use cases and ECS demo walkthrough
 
-#### ☁️ 10:20 - 10:45 AM — AI-Powered Productivity: Workforce Planning For Enterprise
+#### 10:20 - 10:45 AM — AI-Powered Productivity: Workforce Planning For Enterprise
 
 - HR transformation challenges in modern enterprises
 - Overview of Amazon Quick and its HR capabilities
@@ -52,7 +52,7 @@ pre: " <b> 4.1. </b> "
 - Workforce analytics and data-driven insights
 - Strategic workforce planning for enterprise decision-making
 
-#### ☁️ 10:45 - 11:30 AM — Building Secure Private MCP Connection with Amazon Quick
+#### 10:45 - 11:30 AM — Building Secure Private MCP Connection with Amazon Quick
 
 - Introduction to Amazon Quick as an AI assistant platform
 - MCP (Model Context Protocol) and its role in extensibility

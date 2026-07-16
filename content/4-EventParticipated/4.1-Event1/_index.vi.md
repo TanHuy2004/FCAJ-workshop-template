@@ -68,11 +68,11 @@ Phiên đầu tiên giúp em hiểu rõ một vấn đề lớn trong vận hàn
 
 #### Xây dựng AI voice agent tự nhiên hơn
 
-Phiên về voice agent trình bày quá trình phát triển từ hệ thống IVR và chatbot truyền thống đến hội thoại AI gần giống con người. Tôi hiểu rằng một voice agent hữu ích phải cân bằng được độ trễ thấp, độ chính xác và khả năng tương tác tự nhiên. Phiên này còn giới thiệu Amazon Nova Sonic, telephony, streaming, Amazon Bedrock và các công cụ MCP như những thành phần trong kiến trúc có thể mở rộng cho doanh nghiệp.
+Phiên về voice agent trình bày quá trình phát triển từ hệ thống IVR và chatbot truyền thống đến hội thoại AI gần giống con người. Em hiểu rằng một voice agent hữu ích phải cân bằng được độ trễ thấp, độ chính xác và khả năng tương tác tự nhiên. Phiên này còn giới thiệu Amazon Nova Sonic, telephony, streaming, Amazon Bedrock và các công cụ MCP như những thành phần trong kiến trúc có thể mở rộng cho doanh nghiệp.
 
 #### Sử dụng AI như một đồng đội vận hành
 
-AWS DevOps Agent được giới thiệu như một người đồng đội luôn sẵn sàng, có thể hỗ trợ giảm Mean Time to Detect (MTTD) và Mean Time to Repair (MTTR). Tôi đặc biệt ấn tượng với phương pháp suy luận multi-agent sử dụng Bedrock AgentCore vì nó cho thấy nhiều AI agent có thể phối hợp khi điều tra vấn đề vận hành. Phần demo ECS cũng giúp liên hệ kiến thức với một tình huống triển khai thực tế trong môi trường cloud, multi-cloud và hybrid.
+AWS DevOps Agent được giới thiệu như một người đồng đội luôn sẵn sàng, có thể hỗ trợ giảm Mean Time to Detect (MTTD) và Mean Time to Repair (MTTR). Em đặc biệt ấn tượng với phương pháp suy luận multi-agent sử dụng Bedrock AgentCore vì nó cho thấy nhiều AI agent có thể phối hợp khi điều tra vấn đề vận hành. Phần demo ECS cũng giúp liên hệ kiến thức với một tình huống triển khai thực tế trong môi trường cloud, multi-cloud và hybrid.
 
 #### Nâng cao hiệu quả hoạch định nguồn nhân lực bằng AI
 
@@ -110,10 +110,10 @@ Phiên cuối tập trung vào MCP và vai trò của giao thức này trong vi�
 
 ### Ứng Dụng Vào Công Việc Và Học Tập
 
-- Tôi có thể áp dụng tư duy ứng phó sự cố vào project sinh viên bằng cách cải thiện monitoring, ghi lại các lỗi thường gặp và tự động hóa những bước khôi phục an toàn.
-- Tôi có thể tìm hiểu Amazon Bedrock, Amazon Nova Sonic và kiến trúc streaming để hiểu rõ hơn cách xây dựng ứng dụng giọng nói thời gian thực.
+- Em có thể áp dụng tư duy ứng phó sự cố vào project sinh viên bằng cách cải thiện monitoring, ghi lại các lỗi thường gặp và tự động hóa những bước khôi phục an toàn.
+- Em có thể tìm hiểu Amazon Bedrock, Amazon Nova Sonic và kiến trúc streaming để hiểu rõ hơn cách xây dựng ứng dụng giọng nói thời gian thực.
 - Khi thiết kế một AI agent, em cần xác định rõ trách nhiệm, công cụ được phép sử dụng, quyền truy cập dữ liệu và những tình huống cần con người phê duyệt.
-- Tôi có thể sử dụng bài toán phân tích nguồn nhân lực làm ví dụ khi học cách dữ liệu hỗ trợ quyết định kinh doanh bên ngoài lĩnh vực phát triển phần mềm.
+- Em có thể sử dụng bài toán phân tích nguồn nhân lực làm ví dụ khi học cách dữ liệu hỗ trợ quyết định kinh doanh bên ngoài lĩnh vực phát triển phần mềm.
 - Khi thử nghiệm MCP, em nên giới hạn quyền truy cập, bảo vệ thông tin xác thực, kiểm tra đầu vào của công cụ và tránh đưa dịch vụ riêng tư trực tiếp lên Internet.
 - Các phần demo về ECS và kết nối riêng tư có thể trở thành tài liệu tham khảo cho bài tập cloud và project cá nhân trong tương lai.
 
@@ -127,7 +127,7 @@ Các phần demo là nội dung khiến em nhớ nhất. Chúng giúp biến sơ
 
 #### Mở rộng kiến thức kỹ thuật
 
-Tôi đã biết thêm nhiều khái niệm mới như MTTD, MTTR, mô hình nền tảng speech-to-speech, Bedrock AgentCore, suy luận multi-agent và kết nối MCP riêng tư. Một số nội dung còn khá nâng cao đối với em, nhưng chúng giúp em xác định rõ hơn những kiến thức cần tiếp tục học trong lĩnh vực cloud computing và phát triển ứng dụng AI.
+Em đã biết thêm nhiều khái niệm mới như MTTD, MTTR, mô hình nền tảng speech-to-speech, Bedrock AgentCore, suy luận multi-agent và kết nối MCP riêng tư. Một số nội dung còn khá nâng cao đối với em, nhưng chúng giúp em xác định rõ hơn những kiến thức cần tiếp tục học trong lĩnh vực cloud computing và phát triển ứng dụng AI.
 
 #### Hiểu tầm quan trọng của bảo mật và giá trị kinh doanh
 
@@ -135,7 +135,7 @@ Một bài học quan trọng khác là giải pháp kỹ thuật cần tạo ra
 
 #### Định hướng học tập trong tương lai
 
-Sau sự kiện, em muốn tìm hiểu thêm về Amazon Bedrock, ECS, mạng VPC, MCP và kiến trúc AI agent. Tôi cũng muốn xây dựng một project nhỏ kết hợp monitoring với trợ lý AI để thực hành những kiến thức này thay vì chỉ học về mặt lý thuyết.
+Sau sự kiện, em muốn tìm hiểu thêm về Amazon Bedrock, ECS, mạng VPC, MCP và kiến trúc AI agent. Em cũng muốn xây dựng một project nhỏ kết hợp monitoring với trợ lý AI để thực hành những kiến thức này thay vì chỉ học về mặt lý thuyết.
 
 #### Một số hình ảnh khi tham gia sự kiện
 
