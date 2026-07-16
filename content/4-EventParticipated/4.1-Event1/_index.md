@@ -1,6 +1,6 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
@@ -10,135 +10,179 @@ pre: " <b> 4.1. </b> "
 
 ### Event Objectives
 
-- Introduce how AI can support cloud operations, from detecting incidents to resolving them automatically.
-- Share practical approaches for building natural and scalable voice agents.
-- Explain how AWS DevOps Agent can help operations teams reduce incident detection and recovery time.
-- Present the use of AI and data analytics in HR operations and strategic workforce planning.
-- Provide an overview of secure private MCP connectivity with Amazon Quick.
+- Understand the importance of context when using AI.
+- Explore Amazon Quick features for data and workflows.
+- Learn how Amazon CloudFront improves web applications.
+- Discover the process of building a hackathon product.
+- Understand non-determinism in LLM systems.
+- Explore enterprise multi-agent system architecture.
 
-### Event Agenda
+### Speakers
 
-#### 8:30 – 9:00 AM — Settle into your seat
-
-#### 09:00 - 09:25 AM — Deep Response Engine: From Detection to Autonomous Resolution
-
-- The complexity wall in modern cloud operations
-- Shift from alert-driven to action-driven systems
-- Deep Response Engine architecture overview
-- Live demo of autonomous incident response
-- Business impact: cost reduction and zero-downtime operations
-
-#### 09:25 - 09:55 AM — Voice Agents: Building Human-Like AI Conversations at Scale
-
-- Evolution from IVR and chatbots to AI voice agents
-- Key challenges: latency, accuracy, and natural interaction
-- Amazon Nova Sonic and speech-to-speech foundation model
-- Architecture: telephony, streaming, Bedrock, MCP tools
-- Enterprise use cases, best practices, and live demo
-
-#### 09:55 - 10:20 AM — AWS DevOps Agent: Your Always-Available Operations Teammate
-
-- Overview of AWS DevOps Agent
-- Reducing MTTD and MTTR with AI-driven operations
-- Supporting multi-cloud and hybrid environments
-- Bedrock AgentCore and multi-agent reasoning approach
-- Real-world use cases and ECS demo walkthrough
-
-#### 10:20 - 10:45 AM — AI-Powered Productivity: Workforce Planning For Enterprise
-
-- HR transformation challenges in modern enterprises
-- Overview of Amazon Quick and its HR capabilities
-- Accelerating HR operations with automation
-- Workforce analytics and data-driven insights
-- Strategic workforce planning for enterprise decision-making
-
-#### 10:45 - 11:30 AM — Building Secure Private MCP Connection with Amazon Quick
-
-- Introduction to Amazon Quick as an AI assistant platform
-- MCP (Model Context Protocol) and its role in extensibility
-- Security challenges in MCP-based integrations
-- Configuring Amazon Quick VPC private connectivity
-- Demo and real-world implementation insights
+- **Tinh Truong** — Context Is Everything: Making AI Actually Work for You.
+- **Anh Pham** — Friendly AI Assistant with Amazon Quick.
+- **Thinh Nguyen** — From Edge to Origin: CloudFront as Your Foundation.
+- **Team VIB** — 36 Hours with LotusHacks: Building UTMorpho from Idea to Reality.
+- **Duc Dao** — Non-Determinism of “Deterministic” LLM Settings.
+- **Vy Lam** — Enterprise-Grade Multi-Agent System: Startup Credit Scoring.
 
 ### Key Highlights
 
-#### Moving from alerts to autonomous incident response
+#### 8:30 – 9:00 AM — Settle into Your Seat
 
-The first session helped me understand a major challenge in modern cloud operations: systems are becoming too complex for teams to handle every alert manually. The Deep Response Engine showed a more proactive approach in which AI can detect, analyze, and respond to incidents. The live demonstration made the idea of autonomous incident response easier for me to understand and showed its potential to reduce operating costs while supporting zero-downtime operations.
+- Settled into my seat on floor 26.
+- Reviewed the agenda and prepared to take notes.
 
-#### Building more natural AI voice agents
+#### 09:00 - 09:30 AM — Context Is Everything: Making AI Actually Work for You
 
-The voice-agent session explained the evolution from traditional IVR systems and chatbots to human-like AI conversations. I learned that a useful voice agent must balance low latency, accuracy, and natural interaction. The session also introduced Amazon Nova Sonic, telephony and streaming components, Amazon Bedrock, and MCP tools as parts of a scalable enterprise architecture.
+**Speaker: Tinh Truong**
 
-#### Using AI as an operations teammate
+- Why AI fails when it lacks context.
+- The real meaning and role of context.
+- Evolution from prompts to AI memory.
+- Introduction to the Second AI Brain concept.
+- Practical tips for improving AI results.
+- Career advice for students building with AI.
+- Q&A with the speaker.
 
-AWS DevOps Agent was presented as an always-available teammate that can help reduce Mean Time to Detect (MTTD) and Mean Time to Repair (MTTR). I found the multi-agent reasoning approach with Bedrock AgentCore especially interesting because it showed how different AI agents can coordinate when investigating operational problems. The ECS demo also connected the concepts to a real deployment scenario, including multi-cloud and hybrid environments.
+#### 09:30 - 09:45 AM — Friendly AI Assistant with Amazon Quick
 
-#### Improving workforce planning with AI
+**Speaker: Anh Pham**
 
-The workforce-planning session showed that AI is useful not only for technical teams but also for enterprise HR operations. Amazon Quick can support automation, workforce analytics, and data-driven insights. From a student's perspective, this session helped me see how AI can assist managers with strategic planning rather than only handling repetitive tasks.
+- Quick Chat Agent for exploring and analyzing data.
+- Quick Flows for creating no-code AI workflows.
+- Quick Spaces for sharing knowledge with teams.
+- Quick Sight for creating dashboards and reports.
+- Using natural language to work with data.
 
-#### Securing private MCP connectivity
+#### 09:45 - 10:25 AM — From Edge to Origin: CloudFront as Your Foundation
 
-The final session focused on MCP and its role in extending an AI assistant with additional tools and data sources. It also emphasized that extensibility must be designed together with security. The explanation of Amazon Quick VPC private connectivity and the implementation demo helped me understand how an enterprise can connect private resources to an AI platform while maintaining network control.
+**Speaker: Thinh Nguyen**
+
+- Amazon CloudFront for different workloads.
+- Cost optimization with CloudFront.
+- Security capabilities at the edge.
+- Improved reliability for web applications.
+- Better performance and user experience.
+
+#### 10:25 - 10:55 AM — 36 Hours with LotusHacks: Building UTMorpho from Idea to Reality
+
+**Speaker: Team VIB**
+
+- Reasons for joining LotusHacks.
+- The brainstorming journey from zero to an idea.
+- Defining the problem and shaping UTMorpho.
+- Building a product during a 36-hour sprint.
+- Challenges, failures, and important turning points.
+- UTMorpho product overview and demo.
+- Key lessons and future plans.
+
+#### 10:55 - 11:00 AM — Break
+
+- Took a short break before the final sessions.
+
+#### 11:00 - 11:30 AM — Non-Determinism of “Deterministic” LLM Settings
+
+**Speaker: Duc Dao**
+
+- How LLMs select the next token.
+- The assumption that Temperature=0 is deterministic.
+- Effects of inference optimizations on outputs.
+- Practical impacts of different LLM responses.
+- Strategies for reducing non-determinism.
+
+#### 11:30 AM - 12:00 PM — Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
+
+**Speaker: Vy Lam**
+
+- Differences between banking systems and startup data.
+- When to use or avoid a single agent.
+- Introduction to the multi-agent paradigm.
+- Blueprint of a Virtual Credit Committee.
+- Guardrails and compliance requirements.
+- Operational ROI and implementation roadmap.
+- Future direction and Q&A.
 
 ### Key Takeaways
 
-#### AI-driven cloud operations
+#### Context and AI
 
-- Modern cloud systems need to move beyond sending alerts and toward supporting concrete response actions.
-- Autonomous incident response can help reduce manual work, operating costs, MTTD, and MTTR.
-- AI operations solutions should still be designed with clear controls, reliable data, and appropriate human oversight.
+- AI works better with clear and relevant context.
+- Prompts, memory, and background data work together.
+- Students can begin with small AI projects.
 
-#### Voice AI and agent architecture
+#### Amazon Quick
 
-- Natural voice interaction depends on latency, accuracy, and conversation quality.
-- Speech-to-speech foundation models such as Amazon Nova Sonic can simplify the experience compared with older voice systems.
-- Telephony, streaming, Amazon Bedrock, and MCP tools must work together to create a complete enterprise voice-agent solution.
+- Natural language can simplify data analysis.
+- No-code workflows can save time.
+- Shared spaces improve team collaboration.
 
-#### Enterprise productivity and planning
+#### Amazon CloudFront
 
-- AI can automate parts of HR operations and help teams analyze workforce data more effectively.
-- Data-driven insights can support long-term workforce planning and enterprise decision-making.
-- A successful AI solution should solve a real business need instead of using AI only because it is a new technology.
+- CloudFront supports security and performance.
+- Edge services can improve application reliability.
+- Cost should be considered with user experience.
 
-#### Security and private connectivity
+#### Product Development
 
-- MCP makes AI assistants more extensible, but every connection to tools and data introduces security considerations.
-- Private VPC connectivity is important when an enterprise needs to access internal resources without exposing them publicly.
-- Security should be considered from the architecture stage, not added only after implementation.
+- A product should begin with a real problem.
+- Teamwork is important during a short sprint.
+- Feedback and quick changes help improve a demo.
+
+#### LLM and Multi-Agent Systems
+
+- Temperature=0 does not always produce identical results.
+- LLM applications need testing and fallback plans.
+- Multi-agent systems are useful for divided roles.
+- Guardrails and compliance are important in finance.
 
 ### Applying to Work and Study
 
-- I can apply the incident-response mindset to student projects by improving monitoring, documenting common failures, and automating safe recovery steps.
-- I can explore Amazon Bedrock, Amazon Nova Sonic, and streaming architectures to better understand how real-time voice applications are built.
-- When designing an AI agent, I should clearly define its responsibility, available tools, data access, and situations that require human approval.
-- I can use workforce analytics as an example when studying how data supports business decisions outside traditional software engineering.
-- If I experiment with MCP, I should use limited permissions, protect credentials, validate tool inputs, and avoid exposing private services directly to the internet.
-- The ECS and private-connectivity demonstrations can serve as references for future cloud assignments and personal projects.
+- Provide clear context when using AI for assignments.
+- Try Amazon Quick for simple data analysis.
+- Apply CloudFront knowledge to future web projects.
+- Start projects by defining the problem clearly.
+- Add logging and output checks to LLM applications.
+- Explore role-based agents in a small project.
+- Use feedback to improve prototypes quickly.
 
 ### Event Experience
 
-Attending the event was a valuable learning experience because the sessions connected AI concepts with practical enterprise problems. Before the event, I mainly thought of AI as a tool for generating content or helping with programming. After listening to the presentations, I understood more clearly that AI can also support incident response, voice communication, DevOps, HR planning, and secure access to enterprise systems.
+#### Learning from the Speakers
 
-#### Learning from practical demonstrations
+- I learned about AI from several perspectives.
+- The speakers shared practical examples and advice.
+- The content helped me understand possible AI careers.
 
-The live demonstrations were the most memorable parts for me. They helped turn architecture diagrams and technical terms into workflows that I could follow. The autonomous incident-response demo showed how a system can move from detecting a problem to taking action, while the ECS walkthrough helped me understand how an AI operations agent could be used in a real cloud environment.
+#### Technical Knowledge
 
-#### Expanding my technical knowledge
+- I understood the importance of context in AI.
+- I learned more about CloudFront and edge services.
+- I discovered why LLM outputs can be different.
+- I explored how multi-agent systems divide work.
 
-I learned several new concepts, including MTTD, MTTR, speech-to-speech foundation models, Bedrock AgentCore, multi-agent reasoning, and private MCP connectivity. Some topics were advanced, but they gave me a clearer direction for what I should continue studying in cloud computing and AI application development.
+#### Product Development Experience
 
-#### Understanding the importance of security and business value
+- Team VIB showed the reality of a 36-hour sprint.
+- Their story highlighted teamwork and persistence.
+- The product demo made the session easy to follow.
 
-Another important lesson was that a technical solution must create measurable value and remain secure. Cost reduction, zero-downtime operations, faster HR processes, and better workforce decisions are examples of outcomes that businesses care about. At the same time, the MCP session reminded me that connecting AI to enterprise tools and data requires careful access control and network design.
+#### Lessons Learned
 
-#### Future learning direction
+- AI tools are more useful with good context.
+- Technical choices should solve real problems.
+- AI systems need testing and control mechanisms.
+- Practical examples make advanced topics easier.
 
-After the event, I would like to learn more about Amazon Bedrock, ECS, VPC networking, MCP, and AI-agent architecture. I also want to build a small project that combines monitoring with an AI assistant so that I can practice applying these ideas instead of only learning them in theory.
+#### Future Learning Direction
 
-#### Some event photos
+- Practice writing better context for AI tools.
+- Learn more about Amazon Quick and CloudFront.
+- Study LLM evaluation and multi-agent architecture.
+- Build a small AI project based on a real problem.
+
+#### Some Event Photos
 
 *Add your event photos here*
 
-> Overall, the event helped me understand how AI can become a practical teammate in cloud operations and enterprise work. It also encouraged me to continue developing both my technical knowledge and my ability to connect technology with real business needs.
+> Overall, the event gave me useful knowledge about AI, cloud services, product development, LLM behavior, and enterprise multi-agent systems.
