@@ -24,7 +24,7 @@ During my internship, I participated in two technology events. These events help
 ### [Event 2: Technology and Career Workshop](4.2-Event2/)
 
 - **Date:** June 6, 2026
-- **Location:** Not specified in the event information
+- **Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 - **Role:** Attendee
 - **Main topics:** Godot with AWS WebSockets, Docker, Machine Learning-based NIDS, the Sysadmin career path, GraphRAG on AWS, and effective teamwork.
 - **Main activities:** Technical presentations, architecture explanations, career sharing, and live demonstrations.
