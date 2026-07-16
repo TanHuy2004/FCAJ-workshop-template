@@ -1,126 +1,200 @@
 ---
 title: "Event 2"
-date: 2024-01-01
+date: 2026-06-06
 weight: 1
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Technology and Career Workshop”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Learn how Godot clients connect through AWS WebSockets.
+- Understand Docker and containerization technology.
+- Explore Machine Learning for network intrusion detection.
+- Learn about the Sysadmin, Cloud, and DevOps career path.
+- Understand GraphRAG with Amazon Bedrock and Neptune.
+- Improve teamwork and collaboration skills.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Nguyễn Quốc Bảo** — Connecting Godot Clients with AWS WebSockets.
+- **Bảo Huỳnh** — Docker: A Containerization Technology.
+- **Lê Hoàng Gia Đại** — Machine Learning-Based NIDS on AWS.
+- **Trần Trung Vinh** — From IT Helpdesk to Senior Sysadmin, Cloud, and DevOps.
+- **Việt Phát** — GraphRAG with Amazon Bedrock and Amazon Neptune.
+- **Trương Huy Phước** — The Art of Effective Teamwork.
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Connecting Godot Clients with AWS WebSockets
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+**Speaker: Nguyễn Quốc Bảo**
 
-#### Transitioning to modern application architecture – Microservices
+- Introduced multiplayer networking concepts.
+- Compared HTTP Polling, WebSocket, and UDP/ENet.
+- Presented the AWS architecture for multiplayer games.
+- Explained API Gateway, DynamoDB, and Lambda logic.
+- Demonstrated Godot WebSocket integration.
+- Showed a live matchmaking demo.
+- Shared challenges and lessons learned.
+- Suggested future improvements with AWS GameLift.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### Docker: A Containerization Technology
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+**Speaker: Bảo Huỳnh**
 
-#### Domain-Driven Design (DDD)
+- Introduced virtualization and containerization.
+- Compared virtual machines and containers.
+- Explained Docker architecture and Dockerfiles.
+- Introduced images, containers, and image layers.
+- Demonstrated common Docker commands.
+- Shared real-world Docker use cases.
+- Performed a live Docker demonstration.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Machine Learning-Based Network Intrusion Detection System (NIDS) on AWS
 
-#### Event-Driven Architecture
+**Speaker: Lê Hoàng Gia Đại**
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+- Introduced AWS WAF and ML-based NIDS.
+- Explained limits of rule-based web protection.
+- Used the CSE-CIC-IDS2018 dataset.
+- Built and trained a Machine Learning model.
+- Demonstrated preprocessing and model evaluation.
+- Presented real-time security monitoring on AWS.
+- Demonstrated the NIDS dashboard and attack detection.
 
-#### Compute Evolution
+#### From IT Helpdesk to Senior Sysadmin, Cloud, and DevOps
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+**Speaker: Trần Trung Vinh**
 
-#### Amazon Q Developer
+- Introduced the IT Helpdesk to Senior Sysadmin journey.
+- Explained core Sysadmin skills and responsibilities.
+- Discussed the move from on-premises to cloud.
+- Connected System Administration with DevOps.
+- Shared an interview journey at Central Retail Group.
+- Presented career advice and mistakes to avoid.
+- Encouraged learning through practical projects.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+#### Build GraphRAG Applications Using Amazon Bedrock and Amazon Neptune
+
+**Speaker: Việt Phát**
+
+- Introduced Retrieval-Augmented Generation (RAG).
+- Explained the limits of traditional RAG.
+- Discussed challenges with multi-hop reasoning.
+- Presented graph-based knowledge retrieval.
+- Compared managed and custom GraphRAG architectures.
+- Used Amazon Bedrock and Amazon Neptune.
+- Demonstrated the GraphRAG workflow on AWS.
+
+#### The Art of Effective Teamwork
+
+**Speaker: Trương Huy Phước**
+
+- Introduced the basics of effective teamwork.
+- Explained the Four Golden Rules.
+- Compared individual and team efficiency.
+- Presented digital collaboration tools.
+- Shared practices for improving team productivity.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Multiplayer Games and AWS
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- WebSocket supports real-time game communication.
+- API Gateway, DynamoDB, and Lambda can support matchmaking.
+- AWS GameLift can improve future game deployments.
 
-#### Technical Architecture
+#### Docker and Containers
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Containers are lighter than virtual machines.
+- Dockerfiles help reproduce application environments.
+- Docker is useful for development and deployment.
 
-#### Modernization Strategy
+#### Machine Learning and Network Security
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Rules alone cannot detect every attack.
+- Machine Learning can support attack detection.
+- Security models need clean data and careful evaluation.
 
-### Applying to Work
+#### Sysadmin Career Development
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Sysadmins need technical and problem-solving skills.
+- Cloud and DevOps are useful career directions.
+- Practical experience is important for interviews.
+
+#### RAG and GraphRAG
+
+- Traditional RAG can struggle with connected questions.
+- GraphRAG uses relationships between information.
+- Bedrock and Neptune can support GraphRAG on AWS.
+
+#### Effective Teamwork
+
+- Clear communication improves teamwork.
+- Team members need shared goals and responsibilities.
+- Digital tools can improve team productivity.
+
+### Applying to Work and Study
+
+- Build a small Godot WebSocket prototype.
+- Practice Docker commands and write a Dockerfile.
+- Study basic Machine Learning for security data.
+- Improve Linux, networking, and cloud skills.
+- Try a small GraphRAG application on AWS.
+- Use collaboration tools in group assignments.
+- Communicate tasks and responsibilities clearly.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+#### Learning from the Speakers
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+- I learned from six different technical topics.
+- The speakers shared practical experience and demos.
+- The sessions gave me more career directions.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Technical Knowledge
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+- I understood multiplayer networking more clearly.
+- I learned the differences between VMs and containers.
+- I explored Machine Learning for network security.
+- I learned about RAG and GraphRAG architectures.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Career and Teamwork Skills
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- I understood the Sysadmin career roadmap.
+- I learned the value of hands-on projects.
+- I discovered ways to improve teamwork.
+- I understood the importance of clear communication.
 
-#### Some event photos
-*Add your event photos here*  
+#### Practical Demonstrations
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+- The matchmaking demo showed a real game workflow.
+- The Docker demo made containers easier to understand.
+- The NIDS dashboard showed real-time attack detection.
+- The AWS examples made advanced topics clearer.
+
+#### Lessons Learned
+
+- Technology choices should match project needs.
+- Practical work helps me understand theory.
+- Security needs both good tools and good data.
+- Continuous learning is important in IT.
+- Effective teamwork improves project results.
+
+#### Future Learning Direction
+
+- Learn more about Godot WebSocket and AWS GameLift.
+- Practice Docker through personal projects.
+- Study AWS security and Machine Learning.
+- Improve Linux and System Administration skills.
+- Explore Amazon Bedrock and Amazon Neptune.
+- Apply teamwork practices to group projects.
+
+#### Some Event Photos
+
+*Add your event photos here*
+
+> Overall, the event helped me learn about multiplayer networking, Docker, network security, System Administration, GraphRAG, and effective teamwork through practical examples.

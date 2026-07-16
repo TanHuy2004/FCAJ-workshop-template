@@ -1,125 +1,200 @@
 ---
 title: "Event 2"
-date: 2024-01-01
+date: 2026-06-06
 weight: 1
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài Thu Hoạch Sự Kiện “Technology and Career Workshop”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Tìm hiểu cách kết nối Godot qua AWS WebSocket.
+- Hiểu công nghệ containerization và Docker.
+- Khám phá Machine Learning trong phát hiện xâm nhập mạng.
+- Tìm hiểu lộ trình Sysadmin, Cloud và DevOps.
+- Hiểu GraphRAG với Amazon Bedrock và Neptune.
+- Cải thiện kỹ năng làm việc nhóm.
 
-### Danh Sách Diễn Giả
+### Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Nguyễn Quốc Bảo** — Connecting Godot Clients with AWS WebSockets.
+- **Bảo Huỳnh** — Docker: A Containerization Technology.
+- **Lê Hoàng Gia Đại** — Machine Learning-Based NIDS on AWS.
+- **Trần Trung Vinh** — Từ IT Helpdesk đến Senior Sysadmin, Cloud và DevOps.
+- **Việt Phát** — GraphRAG với Amazon Bedrock và Amazon Neptune.
+- **Trương Huy Phước** — The Art of Effective Teamwork.
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Kết Nối Godot Client Với AWS WebSocket
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+**Diễn giả: Nguyễn Quốc Bảo**
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- Giới thiệu các khái niệm multiplayer networking.
+- So sánh HTTP Polling, WebSocket và UDP/ENet.
+- Trình bày kiến trúc game multiplayer trên AWS.
+- Giải thích API Gateway, DynamoDB và Lambda.
+- Demo tích hợp Godot với WebSocket.
+- Thực hiện demo matchmaking trực tiếp.
+- Chia sẻ khó khăn và bài học kinh nghiệm.
+- Đề xuất cải tiến với AWS GameLift.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### Docker: Công Nghệ Containerization
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+**Diễn giả: Bảo Huỳnh**
 
-#### Domain-Driven Design (DDD)
+- Giới thiệu virtualization và containerization.
+- So sánh máy ảo với container.
+- Giải thích kiến trúc Docker và Dockerfile.
+- Giới thiệu image, container và image layer.
+- Demo các câu lệnh Docker phổ biến.
+- Chia sẻ các trường hợp sử dụng thực tế.
+- Thực hiện demo Docker trực tiếp.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Hệ Thống Phát Hiện Xâm Nhập Mạng Dựa Trên Machine Learning Trên AWS
 
-#### Event-Driven Architecture
+**Diễn giả: Lê Hoàng Gia Đại**
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+- Giới thiệu AWS WAF và NIDS sử dụng ML.
+- Giải thích hạn chế của bảo vệ dựa trên rule.
+- Sử dụng bộ dữ liệu CSE-CIC-IDS2018.
+- Xây dựng và huấn luyện mô hình Machine Learning.
+- Demo tiền xử lý và đánh giá mô hình.
+- Trình bày kiến trúc giám sát bảo mật trên AWS.
+- Demo dashboard NIDS và phát hiện tấn công.
 
-#### Compute Evolution
+#### Từ IT Helpdesk Đến Senior Sysadmin, Cloud Và DevOps
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+**Diễn giả: Trần Trung Vinh**
 
-#### Amazon Q Developer
+- Giới thiệu hành trình từ IT Helpdesk đến Senior Sysadmin.
+- Giải thích kỹ năng và trách nhiệm của Sysadmin.
+- Trình bày quá trình chuyển từ on-premises lên cloud.
+- Kết nối System Administration với DevOps.
+- Chia sẻ hành trình phỏng vấn tại Central Retail Group.
+- Đưa ra lời khuyên và lỗi phổ biến cần tránh.
+- Khuyến khích học qua project thực tế.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+#### Xây Dựng GraphRAG Với Amazon Bedrock Và Amazon Neptune
 
-### Những Gì Học Được
+**Diễn giả: Việt Phát**
 
-#### Tư Duy Thiết Kế
+- Giới thiệu Retrieval-Augmented Generation (RAG).
+- Giải thích hạn chế của RAG truyền thống.
+- Trình bày khó khăn với multi-hop reasoning.
+- Giới thiệu truy xuất kiến thức dựa trên graph.
+- So sánh kiến trúc GraphRAG managed và custom.
+- Sử dụng Amazon Bedrock và Amazon Neptune.
+- Demo quy trình xây dựng GraphRAG trên AWS.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+#### Nghệ Thuật Làm Việc Nhóm Hiệu Quả
 
-#### Kiến Trúc Kỹ Thuật
+**Diễn giả: Trương Huy Phước**
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Giới thiệu nền tảng của làm việc nhóm.
+- Giải thích Four Golden Rules.
+- So sánh hiệu quả cá nhân và đội nhóm.
+- Giới thiệu các công cụ cộng tác số.
+- Chia sẻ cách cải thiện năng suất nhóm.
 
-#### Chiến Lược Hiện Đại Hóa
+### Những Bài Học Chính
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+#### Game Multiplayer Và AWS
 
-### Ứng Dụng Vào Công Việc
+- WebSocket hỗ trợ giao tiếp game thời gian thực.
+- API Gateway, DynamoDB và Lambda hỗ trợ matchmaking.
+- AWS GameLift có thể cải thiện việc triển khai game.
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+#### Docker Và Container
 
-### Trải nghiệm trong event
+- Container nhẹ hơn máy ảo.
+- Dockerfile giúp tái tạo môi trường ứng dụng.
+- Docker hữu ích cho phát triển và triển khai.
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+#### Machine Learning Và Bảo Mật Mạng
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+- Rule truyền thống không phát hiện được mọi cuộc tấn công.
+- Machine Learning có thể hỗ trợ phát hiện tấn công.
+- Mô hình bảo mật cần dữ liệu sạch và đánh giá kỹ.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+#### Phát Triển Nghề Nghiệp Sysadmin
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+- Sysadmin cần kỹ năng kỹ thuật và xử lý vấn đề.
+- Cloud và DevOps là hướng phát triển hữu ích.
+- Kinh nghiệm thực tế rất quan trọng khi phỏng vấn.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+#### RAG Và GraphRAG
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- RAG truyền thống gặp khó với câu hỏi có nhiều liên kết.
+- GraphRAG sử dụng mối quan hệ giữa các thông tin.
+- Bedrock và Neptune hỗ trợ GraphRAG trên AWS.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+#### Làm Việc Nhóm Hiệu Quả
+
+- Giao tiếp rõ ràng giúp cộng tác tốt hơn.
+- Thành viên cần thống nhất mục tiêu và trách nhiệm.
+- Công cụ số giúp cải thiện năng suất nhóm.
+
+### Ứng Dụng Vào Công Việc Và Học Tập
+
+- Em muốn xây dựng prototype Godot bằng WebSocket.
+- Em sẽ luyện các lệnh Docker và viết Dockerfile.
+- Em muốn học Machine Learning cơ bản cho bảo mật.
+- Em sẽ cải thiện kỹ năng Linux, networking và cloud.
+- Em muốn thử một ứng dụng GraphRAG nhỏ trên AWS.
+- Em sẽ dùng công cụ cộng tác trong bài tập nhóm.
+- Em sẽ trao đổi rõ nhiệm vụ của từng thành viên.
+
+### Trải Nghiệm Sự Kiện
+
+#### Học Hỏi Từ Các Diễn Giả
+
+- Em được học sáu chủ đề công nghệ khác nhau.
+- Các diễn giả chia sẻ kinh nghiệm và demo thực tế.
+- Các phiên giúp em có thêm định hướng nghề nghiệp.
+
+#### Kiến Thức Kỹ Thuật
+
+- Em hiểu rõ hơn về multiplayer networking.
+- Em biết sự khác nhau giữa máy ảo và container.
+- Em khám phá Machine Learning trong bảo mật mạng.
+- Em tìm hiểu kiến trúc RAG và GraphRAG.
+
+#### Kỹ Năng Nghề Nghiệp Và Làm Việc Nhóm
+
+- Em hiểu rõ hơn lộ trình nghề Sysadmin.
+- Em nhận ra giá trị của các project thực tế.
+- Em biết thêm cách cải thiện làm việc nhóm.
+- Em hiểu tầm quan trọng của giao tiếp rõ ràng.
+
+#### Các Phần Demo Thực Tế
+
+- Demo matchmaking cho em thấy quy trình game thực tế.
+- Demo Docker giúp em hiểu container rõ hơn.
+- Dashboard NIDS cho thấy cách phát hiện tấn công.
+- Các ví dụ AWS giúp chủ đề nâng cao dễ hiểu hơn.
+
+#### Những Điều Em Học Được
+
+- Công nghệ được chọn cần phù hợp với project.
+- Thực hành giúp em hiểu lý thuyết tốt hơn.
+- Bảo mật cần cả công cụ và dữ liệu tốt.
+- Học tập liên tục rất quan trọng trong ngành IT.
+- Làm việc nhóm tốt giúp nâng cao kết quả project.
+
+#### Định Hướng Học Tập Trong Tương Lai
+
+- Em muốn học thêm Godot WebSocket và AWS GameLift.
+- Em sẽ luyện Docker qua các project cá nhân.
+- Em muốn tìm hiểu AWS Security và Machine Learning.
+- Em sẽ cải thiện kỹ năng Linux và System Administration.
+- Em muốn khám phá Amazon Bedrock và Amazon Neptune.
+- Em sẽ áp dụng kỹ năng teamwork vào bài tập nhóm.
+
+#### Một Số Hình Ảnh Khi Tham Gia Sự Kiện
+
+*Thêm các hình ảnh của bạn tại đây*
+
+> Nhìn chung, sự kiện giúp em học thêm về multiplayer networking, Docker, bảo mật mạng, System Administration, GraphRAG và kỹ năng làm việc nhóm qua các ví dụ thực tế.

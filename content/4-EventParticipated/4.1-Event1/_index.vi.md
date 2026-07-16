@@ -33,7 +33,7 @@ pre: " <b> 4.1. </b> "
 - Em ổn định chỗ ngồi tại tầng 26.
 - Em xem lịch trình và chuẩn bị ghi chú.
 
-#### ☁️ 09:00 - 09:30 AM — Context Is Everything: Làm Cho AI Thực Sự Hữu Ích
+#### 09:00 - 09:30 AM — Context Is Everything: Làm Cho AI Thực Sự Hữu Ích
 
 **Diễn giả: Tinh Truong**
 
@@ -45,7 +45,7 @@ pre: " <b> 4.1. </b> "
 - Lời khuyên nghề nghiệp cho sinh viên học AI.
 - Hỏi đáp cùng diễn giả.
 
-#### ☁️ 09:30 - 09:45 AM — Trợ Lý AI Thân Thiện Với Amazon Quick
+#### 09:30 - 09:45 AM — Trợ Lý AI Thân Thiện Với Amazon Quick
 
 **Diễn giả: Anh Pham**
 
@@ -55,7 +55,7 @@ pre: " <b> 4.1. </b> "
 - Quick Sight để tạo dashboard và báo cáo.
 - Sử dụng ngôn ngữ tự nhiên để làm việc với dữ liệu.
 
-#### ☁️ 09:45 - 10:25 AM — From Edge to Origin: CloudFront Làm Nền Tảng
+#### 09:45 - 10:25 AM — From Edge to Origin: CloudFront Làm Nền Tảng
 
 **Diễn giả: Thinh Nguyen**
 
@@ -65,7 +65,7 @@ pre: " <b> 4.1. </b> "
 - Cải thiện độ tin cậy của ứng dụng web.
 - Nâng cao hiệu năng và trải nghiệm người dùng.
 
-#### ☁️ 10:25 - 10:55 AM — 36 Giờ Với LotusHacks: Xây Dựng UTMorpho Từ Ý Tưởng Đến Thực Tế
+#### 10:25 - 10:55 AM — 36 Giờ Với LotusHacks: Xây Dựng UTMorpho Từ Ý Tưởng Đến Thực Tế
 
 **Diễn giả: Team VIB**
 
@@ -77,11 +77,11 @@ pre: " <b> 4.1. </b> "
 - Tổng quan sản phẩm và demo UTMorpho.
 - Bài học chính và kế hoạch tiếp theo.
 
-#### ☕️ 10:55 - 11:00 AM — Nghỉ Giải Lao
+#### 10:55 - 11:00 AM — Nghỉ Giải Lao
 
 - Em nghỉ ngắn trước hai phiên cuối.
 
-#### ☁️ 11:00 - 11:30 AM — Tính Không Xác Định Của Thiết Lập LLM “Xác Định”
+#### 11:00 - 11:30 AM — Tính Không Xác Định Của Thiết Lập LLM “Xác Định”
 
 **Diễn giả: Duc Dao**
 
@@ -91,7 +91,7 @@ pre: " <b> 4.1. </b> "
 - Tác động thực tế khi kết quả LLM khác nhau.
 - Các phương pháp giảm tính không xác định.
 
-#### ☁️ 11:30 AM - 12:00 PM — Hệ Thống Multi-Agent Cấp Doanh Nghiệp: Chấm Điểm Tín Dụng Startup
+#### 11:30 AM - 12:00 PM — Hệ Thống Multi-Agent Cấp Doanh Nghiệp: Chấm Điểm Tín Dụng Startup
 
 **Diễn giả: Vy Lam**
 
