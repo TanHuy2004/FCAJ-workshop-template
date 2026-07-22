@@ -1,19 +1,46 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01 
-weight : 1
-chapter : false
-pre : " <b> 5.1. </b> "
+title: "Tổng quan kiến trúc"
+weight: 1
+chapter: false
+pre: " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+### 1. Kiến trúc tổng thể hệ thống TrustBite
+Hệ thống **TrustBite** được xây dựng theo mô hình **Modular Monolith** phía backend để tối ưu hóa hiệu quả triển khai, kết hợp cùng các dịch vụ Cloud Managed Services của AWS để đạt tính mở rộng và bảo mật tốt nhất.
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+Dưới đây là sơ đồ kiến trúc tổng thể các thành phần của TrustBite:
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+{{< siteimg src="/images/5-Workshop/5.1-Workshop-overview/trustbite-aws-architecture.png" alt="Sơ đồ kiến trúc triển khai TrustBite trên AWS" style="width: 100%; max-width: 1200px; display: block; margin: 1.5rem auto; border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);" >}}
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+---
+
+### 2. Thành phần và vai trò trong hệ thống
+*   **Mobile App (Flutter + Dart):** Ứng dụng client chính của người dùng cuối. Hỗ trợ đăng nhập qua Cognito, duyệt tìm quán ăn theo vị trí/bản đồ, viết review và tải hóa đơn lên để kiểm định.
+*   **Admin Portal (Next.js):** Cổng quản trị dành cho kiểm duyệt viên để rà soát hàng đợi hóa đơn nghi vấn, duyệt claim nhà hàng, xem audit log hệ thống.
+*   **Express API Node.js (Backend Monolith):** Cung cấp toàn bộ REST API nghiệp vụ. Được cấu hình xử lý native ES modules gọn nhẹ.
+*   **Redis & BullMQ:** Hàng đợi tin nhắn. Chuyển các tác vụ tốn thời gian xử lý như OCR hóa đơn, phân tích chống gian lận sang worker chạy ngầm độc lập.
+*   **PostgreSQL + PostGIS:** Cơ sở dữ liệu quan hệ chính. Sử dụng extension **PostGIS** để lưu trữ và truy vấn khoảng cách không gian (Spatial Queries).
+*   **AWS Managed Services:**
+    *   **Amazon Cognito:** Đảm nhận toàn bộ quy trình đăng ký, đăng nhập và xác thực token.
+    *   **Amazon S3:** Lưu trữ ảnh hóa đơn riêng tư của người dùng.
+    *   **AWS Textract:** Trích xuất văn bản hóa đơn tự động.
+
+---
+
+### 3. Kiến trúc xác thực người dùng (Amazon Cognito Integration)
+Hành trình xác thực người dùng trong workshop được thực hiện qua luồng OIDC tiêu chuẩn:
+
+```text
+Người dùng ──> Mobile/Web Client ──> Cognito Managed Login (Authorization Code + PKCE)
+                                                │
+Backend API <── (Gửi Bearer Access Token) ── Client nhận Tokens (Access, ID, Refresh)
+     │
+     └──> [Xác minh JWT bằng Cognito JWKS] ──> Truy cập API được bảo vệ
+```
+
+#### Phân biệt Xác thực (Authentication) & Phân quyền (Authorization):
+*   **Authentication (Ai đang truy cập?):** Do Amazon Cognito đảm nhận. Cognito xác minh thông tin đăng nhập và phát hành JWT (JSON Web Token).
+*   **Authorization (Được phép làm gì?):** Do Express Backend của TrustBite xử lý. Sau khi giải mã và xác minh chữ ký của JWT bằng bộ khóa công khai JWKS của Cognito, backend sẽ đọc thông tin vai trò (**USER**, **MERCHANT**, **ADMIN**) và kiểm tra quyền tương ứng trước khi xử lý dữ liệu.
+
+> [!WARNING]
+> Tuyệt đối không dùng ID token để bảo vệ REST API. Hệ thống backend TrustBite chỉ chấp nhận các access token hợp lệ có thuộc tính **token_use** bằng **access**.
