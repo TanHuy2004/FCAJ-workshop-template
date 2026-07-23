@@ -1,8 +1,8 @@
 ---
-title: "Blog 3"
-weight: 3
+title: "Blog 2"
+weight: 2
 chapter: false
-pre: " <b> 3.3. </b> "
+pre: " <b> 3.2. </b> "
 ---
 # AgentCore Harness: From Idea to a Working AI Agent with Only Two APIs
 
