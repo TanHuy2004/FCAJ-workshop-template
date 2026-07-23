@@ -15,7 +15,7 @@ Tại đây là phần liệt kê và giới thiệu các bài blog mình đã �
 ### [BLOG 1 - CÁC CÁCH KIỂM SOÁT QUYỀN TRUY CẬP ỨNG DỤNG WEB TRÊN AWS VỚI AMAZON COGNITO](3.1-blog1/)
 Blog này giới thiệu ba mô hình kiểm soát quyền truy cập phổ biến cho ứng dụng web trên AWS bằng Amazon Cognito: Application Load Balancer kết hợp Cognito, Amazon API Gateway kết hợp Cognito, và CloudFront kết hợp Lambda@Edge. Các mô hình này giúp bảo vệ API và tài nguyên backend, đồng thời giảm nhu cầu tự xây dựng toàn bộ logic xác thực và phân quyền từ đầu.
 
-### [BLOG 3 - AGENTCORE HARNESS: TỪ Ý TƯỞNG ĐẾN MỘT AI AGENT HOẠT ĐỘNG CHỈ VỚI HAI API](3.2-blog2/)
+### [BLOG 2 - AGENTCORE HARNESS: TỪ Ý TƯỞNG ĐẾN MỘT AI AGENT HOẠT ĐỘNG CHỈ VỚI HAI API](3.2-blog2/)
 Blog này giới thiệu Amazon Bedrock AgentCore Harness, dịch vụ được quản lý giúp định nghĩa và vận hành AI Agent thông qua hai API CreateHarness và InvokeHarness. Bài viết tóm tắt những thành phần Harness quản lý, một ví dụ AWS Support Agent và sự khác biệt giữa AgentCore Harness với AgentCore Runtime.
 
 ### [BLOG 3 - MCP KHÔNG CÒN LÀ TẤT CẢ TRONG KIẾN TRÚC AGENTIC AI](3.3-blog3/)
